@@ -1,0 +1,330 @@
+- id: 0
+  isSelected: false
+  type: 牙竜種
+  alias: 賊竜
+  name: ドスジャグラス
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    前脚:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+    胴:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    後脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+  elements:
+    火: 3
+    水: 0
+    雷: 2
+    氷: 2
+    龍: 1
+  status:
+    毒: 3
+    睡眠: 3
+    麻痺: 3
+    爆破: 3
+    気絶: 3
+- id: 1
+  isSelected: false
+  type: 鳥竜種
+  alias: 掻鳥
+  name: クルルヤック
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    前脚:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    胴:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    後脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+  elements:
+    火: 2
+    水: 3
+    雷: 2
+    氷: 2
+    龍: 2
+  status:
+    毒: 2
+    睡眠: 2
+    麻痺: 2
+    爆破: 2
+    気絶: 2
+- id: 2
+  isSelected: false
+  type: 鳥竜種
+  alias: 毒妖鳥
+  name: プケプケ
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    翼:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+    背中:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+  elements:
+    火: 2
+    水: 0
+    雷: 3
+    氷: 2
+    龍: 1
+  status:
+    毒: 1
+    睡眠: 3
+    麻痺: 3
+    爆破: 2
+    気絶: 2
+- id: 3
+  isSelected: false
+  type: 獣竜種
+  alias: 土砂竜
+  name: ボルボロス
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    前脚:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    胴:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    脚:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+  elements:
+    火: '3-0'
+    水: '0-3'
+    雷: 0
+    氷: 2
+    龍: 1
+  status:
+    毒: 3
+    睡眠: 2
+    麻痺: 3
+    爆破: 3
+    気絶: 1
+- id: 4
+  isSelected: false
+  type: 魚竜種
+  alias: 泥魚竜
+  name: ジュラトドス
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    胴:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    脚:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 2
+  elements:
+    火: '1-0'
+    水: '0-3'
+    雷: '3-0'
+    氷: 1
+    龍: 1
+  status:
+    毒: 2
+    睡眠: 1
+    麻痺: 2
+    爆破: 1
+    気絶: 3
+- id: 5
+  isSelected: false
+  type: 牙竜種
+  alias: 飛雷竜
+  name: トビカガチ
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+    前脚:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    背中:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    後脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+  elements:
+    火: 2
+    水: 3
+    雷: 0
+    氷: 2
+    龍: 1
+  status:
+    毒: 3
+    睡眠: 2
+    麻痺: 2
+    爆破: 2
+    気絶: 2
+- id: 6
+  isSelected: false
+  type: 獣竜種
+  alias: 蛮頭竜
+  name: アンジャナフ
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    前脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    胴:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    脚:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+  elements:
+    火: 0
+    水: 3
+    雷: 2
+    氷: 2
+    龍: 1
+  status:
+    毒: 2
+    睡眠: 2
+    麻痺: 2
+    爆破: 1
+    気絶: 2
