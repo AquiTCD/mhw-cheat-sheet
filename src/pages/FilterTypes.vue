@@ -3,7 +3,6 @@ v-ons-list
   v-ons-list-header
     | 竜種
   v-ons-list-item(
-    tappable
     v-for="(type, index) in monsterTypes"
     :for="type + index"
     :key="type + index"
