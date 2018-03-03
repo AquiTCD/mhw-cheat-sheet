@@ -3,16 +3,19 @@ v-ons-list
   v-ons-list-header
     | 竜種
   v-ons-list-item(
-    v-for="type in monsterTypes"
-    :for="type"
-    :key="type"
+    tappable
+    v-for="(type, index) in monsterTypes"
+    :for="type + index"
+    :key="type + index"
+    @click="toggleSwitch(type)"
   )
     label.center
       | {{ type }}
     label.right
       v-ons-switch(
-        :input-id="type"
-        v-model="type.on"
+        :input-id="type + index"
+        v-model="filteredTypes"
+        :value="type"
       )
 </template>
 
@@ -20,8 +23,16 @@ v-ons-list
 export default {
   name    : 'FilterTypes',
   computed: {
+    filteredTypes () {
+      return this.$store.getters.filteredTypes
+    },
     monsterTypes () {
-      return this.$store.getters.monsterTypes
+      return this.$store.getters.allMonsterTypes
+    },
+  },
+  methods: {
+    toggleSwitch (type) {
+      this.$store.dispatch('TOGGLE_TYPE_FILTER', type)
     },
   },
 }

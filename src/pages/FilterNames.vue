@@ -13,7 +13,7 @@ v-ons-list
         :input-id="mons.id"
         :value="mons.isSelected"
         v-model="mons.isSelected"
-        @click="toggleCheck"
+        @click="toggleCheck(mons.id)"
       )
     label.center(:for="mons.id")
       | {{ mons.name }}
@@ -24,12 +24,12 @@ export default {
   name    : 'FilterItems',
   computed: {
     monsters () {
-      return this.$store.getters.monsters
+      return this.$store.getters.filterdMonstersByTypes
     },
   },
   methods: {
-    toggleCheck () {
-      this.isSelected = !this.isSelected
+    toggleCheck (id) {
+      this.$store.dispatch('TOGGLE_MONSTER_VISIBLITY', id)
     },
   },
 }
