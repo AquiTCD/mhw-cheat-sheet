@@ -4,7 +4,7 @@
 import 'font-awesome/css/font-awesome.css'
 import 'onsenui/css/onsenui-core.css'
 import 'onsenui/css/onsen-css-components.css'
-
+import filters from './filters'
 import Vue from 'vue'
 import $ons from 'vue-onsenui/esm'
 import * as VOns from './vue-onsen-components'
@@ -14,7 +14,9 @@ import App from './App'
 Vue.config.productionTip = false
 Vue.use($ons)
 Object.values(VOns).forEach(comp => Vue.component(comp.name, comp))
-
+Object.keys(filters).forEach(key => {
+  Vue.filter(key, filters[key])
+})
 /* eslint-disable no-new */
 new Vue({
   el        : '#app',
