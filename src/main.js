@@ -4,6 +4,7 @@
 import 'font-awesome/css/font-awesome.css'
 import 'onsenui/css/onsenui-core.css'
 import 'onsenui/css/onsen-css-components.css'
+import Ads from 'vue-google-adsense'
 import filters from './filters'
 import router from './router'
 import Vue from 'vue'
@@ -18,6 +19,13 @@ Object.values(VOns).forEach(comp => Vue.component(comp.name, comp))
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key])
 })
+
+Vue.use(require('vue-script2'))
+
+Vue.use(Ads.Adsense)
+Vue.use(Ads.InArticleAdsense)
+Vue.use(Ads.InFeedAdsense)
+
 /* eslint-disable no-new */
 new Vue({
   el        : '#app',

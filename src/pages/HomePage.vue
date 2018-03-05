@@ -10,6 +10,12 @@
           )
       .center
         | {{ msg }}
+    .ad
+      span.pr - スポンサードリンク -
+      Adsense(
+        data-ad-client="ca-pub-5201227009100177"
+        data-ad-slot="4809633238"
+      )
     .main
       router-view
 </template>
@@ -42,4 +48,9 @@ ons-card
   text-align: center
 ons-list-item, ons-card
   cursor: pointer
+.ad
+  text-align: center
+.pr
+  font-size: 9px
+  color: #BDBDBD
 </style>

@@ -9370,6 +9370,13 @@ vue-eslint-parser@^2.0.3:
     esquery "^1.0.0"
     lodash "^4.17.4"
 
+vue-google-adsense@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/vue-google-adsense/-/vue-google-adsense-1.0.3.tgz#4b5ccc1f632d69e3546a637b14bf58952eca90bd"
+  dependencies:
+    vue "^2.5.13"
+    vue-script2 "2.0.1"
+
 vue-hot-reload-api@^2.2.0:
   version "2.3.0"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.0.tgz#97976142405d13d8efae154749e88c4e358cf926"
@@ -9402,6 +9409,10 @@ vue-router@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/vue-router/-/vue-router-3.0.1.tgz#d9b05ad9c7420ba0f626d6500d693e60092cc1e9"
 
+vue-script2@2.0.1, vue-script2@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/vue-script2/-/vue-script2-2.0.1.tgz#3d35c3eb3f5e59298a8efc9b7aa71bded97a9b53"
+
 vue-style-loader@^3.0.0, vue-style-loader@^3.0.3:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/vue-style-loader/-/vue-style-loader-3.1.2.tgz#6b66ad34998fc9520c2f1e4d5fa4091641c1597a"
@@ -9426,7 +9437,7 @@ vue-test-utils@^1.0.0-beta.11:
   dependencies:
     lodash "^4.17.4"
 
-vue@^2.5.2:
+vue@^2.5.13, vue@^2.5.2:
   version "2.5.13"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.13.tgz#95bd31e20efcf7a7f39239c9aa6787ce8cf578e1"
 
