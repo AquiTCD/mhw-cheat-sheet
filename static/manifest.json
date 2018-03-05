@@ -1,6 +1,6 @@
 {
-  "name": "mhw-cheat-sheet",
-  "short_name": "mhw-cs",
+  "name": "MHW 弱点検索",
+  "short_name": "MHW CS",
   "icons": [
     {
       "src": "/static/img/icons/android-chrome-192x192.png",
@@ -13,8 +13,8 @@
       "type": "image/png"
     }
   ],
-  "start_url": "/index.html",
+  "start_url": "/",
   "display": "standalone",
-  "background_color": "#000000",
+  "background_color": "#ffffff",
   "theme_color": "#5D4037"
 }
