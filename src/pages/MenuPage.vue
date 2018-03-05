@@ -1,18 +1,20 @@
-<template>
-  <v-ons-page>
-    <v-ons-toolbar modifier="transparent"></v-ons-toolbar>
-    <div class="header">
-      <img src="../assets/onsenui-logo.png" alt="onsenui-logo">
-    </div>
+<template lang="pug">
+v-ons-page
+  v-ons-toolbar(modifier="transparent")
+  .header
+    img(src="../assets/icon.png" alt="icon")
 
-    <v-ons-list-title>Onsen UI Essential Links</v-ons-list-title>
-    <v-ons-list>
-      <v-ons-list-item modifier="chevron" v-for="item in essentialLinks" @click="goTo(item.link)" :key="item.link">
-        <div class="left"><v-ons-icon fixed-width :icon="item.icon"></v-ons-icon></div>
-        <div class="center">{{ item.label }}</div>
-      </v-ons-list-item>
-    </v-ons-list>
-  </v-ons-page>
+  v-ons-list-title Menu
+  v-ons-list
+    v-ons-list-item(
+      modifier="chevron"
+      v-for="item in essentialLinks"
+      @click="goTo(item.link, item.openNewTab)"
+      :key="item.link"
+      )
+      .left
+        v-ons-icon(fixed-width :icon="item.icon")
+      .center {{ item.label }}
 </template>
 
 <script>
@@ -22,38 +24,39 @@ export default {
     return {
       essentialLinks: [
         {
-          label: 'Docs',
-          link : 'https://onsen.io/v2/docs/guide/vue/',
-          icon : 'fa-book',
+          label     : 'メインページ',
+          link      : '/main',
+          icon      : 'fa-book',
+          openNewTab: false,
         },
         {
-          label: 'Gitter Chat',
-          link : 'https://gitter.im/OnsenUI/OnsenUI',
-          icon : 'fa-commenting',
+          label     : 'FAQ',
+          link      : '/faq',
+          icon      : 'fa-question-circle',
+          openNewTab: false,
         },
         {
-          label: 'Forum',
-          link : 'https://community.onsen.io',
-          icon : 'fa-comments',
+          label     : '問題報告',
+          link      : 'https://docs.google.com/forms/d/e/1FAIpQLSfNMkmoh6HshmJlMabxCAYAebXoYF9TVWU_60Qvw5Tuu_26zA/viewform?usp=sf_link',
+          icon      : 'fa-commenting',
+          openNewTab: true,
         },
         {
-          label: 'Twitter',
-          link : 'https://twitter.com/Onsen_UI',
-          icon : 'fa-twitter',
-        },
-        {
-          label: 'Playground',
-          link : 'https://tutorial.onsen.io/',
-          icon : 'fa-graduation-cap',
+          label     : 'about',
+          link      : '/about',
+          icon      : 'fa-info-circle',
+          openNewTab: false,
         },
       ],
     }
   },
   methods: {
-    goTo (url) {
-      const newWindow = window.open(url, '_blank')
-      newWindow.opener = null
-      newWindow.location = url
+    goTo (url, openNewTab) {
+      if (openNewTab) {
+        window.open(url, '_blank')
+      } else {
+        location.href = url
+      }
     },
   },
 }

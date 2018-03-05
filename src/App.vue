@@ -8,14 +8,14 @@
         :animation="$ons.platform.isAndroid() ? 'overlay' : 'reveal'"
         :open.sync="menuIsOpen"
       )
-        //- menu-page
+        menu-page
       v-ons-splitter-content
         home-page
 </template>
 
 <script>
 import HomePage from '@/pages/HomePage'
-// import MenuPage from '@/pages/MenuPage'
+import MenuPage from '@/pages/MenuPage'
 
 export default {
   name    : 'app',
@@ -27,12 +27,11 @@ export default {
       set (newValue) {
         this.$store.commit('splitter/toggle', newValue)
       },
-      // Message    }
     },
   },
   components: {
     HomePage,
-    // MenuPage
+    MenuPage,
   },
 }
 </script>

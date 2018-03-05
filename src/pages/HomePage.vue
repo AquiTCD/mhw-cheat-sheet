@@ -1,6 +1,13 @@
 <template lang="pug">
   v-ons-page
     v-ons-toolbar.home-toolbar
+      .left
+        v-ons-toolbar-button(
+          @click="$store.commit('splitter/toggle')"
+        )
+          v-ons-icon(
+            icon="fa-bars"
+          )
       .center
         | {{ msg }}
     .header
@@ -22,13 +29,6 @@ export default {
     FiltersBlock,
     CardsBlock,
   },
-  // methods: {
-  //   goTo (url) {
-  //     const newWindow = window.open(url, '_blank')
-  //     newWindow.opener = null
-  //     newWindow.location = url
-  //   },
-  // },
 }
 </script>
 
