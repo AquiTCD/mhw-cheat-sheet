@@ -3,7 +3,7 @@
   h2 about
   v-ons-card
     .date 2018-03-05
-    .title 0.1.1
+    .title 0.2.0
     ul
       li メニューを追加
       ul
