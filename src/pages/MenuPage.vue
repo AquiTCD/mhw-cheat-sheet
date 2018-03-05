@@ -7,9 +7,10 @@ v-ons-page
   v-ons-list-title Menu
   v-ons-list
     v-ons-list-item(
+      tappable
       modifier="chevron"
-      v-for="item in essentialLinks"
-      @click="goTo(item.link, item.openNewTab)"
+      v-for="item in links"
+      @click="pageChange(item)"
       :key="item.link"
       )
       .left
@@ -22,7 +23,7 @@ export default {
   name: 'menu',
   data () {
     return {
-      essentialLinks: [
+      links: [
         {
           label     : 'メインページ',
           link      : '/main',
@@ -56,6 +57,13 @@ export default {
         window.open(url, '_blank')
       } else {
         location.href = url
+      }
+    },
+    pageChange (item) {
+      if (item.openNewTab) {
+        window.open(item.link, '_blank')
+      } else {
+        this.$router.push(item.link)
       }
     },
   },

@@ -5,6 +5,7 @@ import 'font-awesome/css/font-awesome.css'
 import 'onsenui/css/onsenui-core.css'
 import 'onsenui/css/onsen-css-components.css'
 import filters from './filters'
+import router from './router'
 import Vue from 'vue'
 import $ons from 'vue-onsenui/esm'
 import * as VOns from './vue-onsen-components'
@@ -23,4 +24,5 @@ new Vue({
   store,
   template  : '<App/>',
   components: { App, },
+  router,
 })

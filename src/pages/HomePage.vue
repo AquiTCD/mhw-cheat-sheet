@@ -10,9 +10,8 @@
           )
       .center
         | {{ msg }}
-    .header
-    filters-block
-    cards-block
+    .main
+      router-view
 </template>
 
 <script>
@@ -35,15 +34,6 @@ export default {
 <style lang="stylus" scoped>
 .header
   text-align: center
-.testImg
-  img
-    display: block
-    margin-left: auto
-    margin-right: auto
-  figcaption
-    text-align: center
-img
-  max-width: 300px
 ons-list-title
   text-transform: none
 ons-list-title:not(:first-of-type)
