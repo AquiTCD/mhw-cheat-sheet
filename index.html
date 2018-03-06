@@ -40,6 +40,9 @@
     <meta property="og:url" content="https://mhw-cs.solunita.net">
     <meta property="og:site_name" content="MHW 弱点検索">
     <meta property="og:locale" content="ja_JP">
+    <meta property="og:image" content="<%= htmlWebpackPlugin.files.publicPath %>static/img/icons/apple-touch-icon.png">
+    <meta property="og:type" content="game">
+    <meta property="fb:app_id" content="168544463951373" />
     <meta name="twitter:card" content="summary">
     <meta name="twitter:description" content="モンスターハンターワールド モンスター弱点検索システム">
     <% for (var chunk of webpack.chunks) {
@@ -48,6 +51,24 @@
     <link rel="<%= chunk.initial?'preload':'prefetch' %>" href="<%= htmlWebpackPlugin.files.publicPath + file %>" as="<%= file.match(/\.css$/)?'style':'script' %>"><% }}} %>
   </head>
   <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '168544463951373',
+          xfbml      : true,
+          version    : 'v2.12'
+        });
+        FB.AppEvents.logPageView();
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
     <noscript>
       This is your fallback content in case JavaScript fails to load.
     </noscript>
