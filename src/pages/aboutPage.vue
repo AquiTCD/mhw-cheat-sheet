@@ -1,6 +1,6 @@
 <template lang="pug">
 .about
-  h2 about
+  h2.header About
   v-ons-card
     .date 2018-03-05
     .title 0.2.0
@@ -23,5 +23,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
+.header
+  text-align: center
 </style>

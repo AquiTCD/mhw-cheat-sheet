@@ -16,6 +16,11 @@ export default new Router({
       component: require('@/pages/FAQPage').default,
     },
     {
+      path     : '/feedback',
+      name     : 'feedback',
+      component: require('@/pages/feedbackPage').default,
+    },
+    {
       path     : '/about',
       name     : 'about',
       component: require('@/pages/aboutPage').default,

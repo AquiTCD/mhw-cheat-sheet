@@ -1,6 +1,6 @@
 <template lang="pug">
 .faq
-  h2 FAQ
+  h2.header FAQ
   v-ons-card
     .title Q.竜種のスライダが上手く動きません。
     .answer
@@ -54,5 +54,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
+.header
+  text-align: center
 </style>

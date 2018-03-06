@@ -51,9 +51,9 @@ export default {
         },
         {
           label     : '問題報告',
-          link      : 'https://docs.google.com/forms/d/e/1FAIpQLSfNMkmoh6HshmJlMabxCAYAebXoYF9TVWU_60Qvw5Tuu_26zA/viewform?usp=sf_link',
+          link      : '/feedback',
           icon      : 'fa-commenting',
-          openNewTab: true,
+          openNewTab: false,
         },
         {
           label     : 'about',
