@@ -1,13 +1,26 @@
 <template lang="pug">
 v-ons-list
-  v-ons-list-header
-    | 名前
+  v-ons-list-header(
+    @click="toggleOpen()"
+  )
+    i.fa(:class="isOpen ? 'fa-chevron-down' : 'fa-chevron-right'")
+    | &nbsp; 名称
+    .buttons
+      v-ons-button.button(
+        modifier="outline"
+        @click.stop="offAllcheckbox()"
+      ) 全てオフ
+      v-ons-button.button(
+        modifier="normal"
+        @click.stop="onAllcheckbox()"
+      ) 全てオン
   v-ons-list-item(
     tappable
     v-for="mons in monsters"
     :key="mons.id"
     :name="mons.name"
-    @click="toggleCheck(mons.id)"
+    @click.stop="toggleCheck(mons.id)"
+    v-show="isOpen"
   )
     label.left
       v-ons-checkbox(
@@ -18,11 +31,22 @@ v-ons-list
       )
     label.center(:for="mons.id")
       | {{ mons.name }}
+  v-ons-list-item(v-if="!monsters.length" v-show="isOpen")
+    label.left
+      v-ons-checkbox(disabled)
+    label.center.disabled
+      | モンスター名
 </template>
 
 <script>
 export default {
-  name    : 'FilterItems',
+  name: 'FilterItems',
+  data () {
+    return {
+      isOpen     : true,
+      allcheckbox: false,
+    }
+  },
   computed: {
     monsters () {
       return this.$store.getters.filterdMonstersByTypes
@@ -32,10 +56,33 @@ export default {
     toggleCheck (id) {
       this.$store.dispatch('TOGGLE_MONSTER_VISIBLITY', id)
     },
+    toggleOpen () {
+      this.isOpen = !this.isOpen
+    },
+    onAllcheckbox () {
+      this.allcheckbox = true
+      this.$store.dispatch('ON_ALL_MONSTER_VISIBLITY')
+    },
+    offAllcheckbox () {
+      this.allcheckbox = false
+      this.$store.dispatch('OFF_ALL_MONSTER_VISIBLITY')
+    },
   },
 }
 </script>
 
 <style lang="stylus" scoped>
-
+.buttons
+  display: inline-block
+  position: absolute
+  right: 15px
+.button
+  font-size: 0.8em
+  line-height: 1.2
+.button:not(:last-of-type)
+  margin-right: 7px
+.disabled
+  color: #BDBDBD
+.list-enter-active, .list-leave-active
+  transition: opacity 5s
 </style>

@@ -56,7 +56,7 @@ export default {
           openNewTab: false,
         },
         {
-          label     : 'about',
+          label     : 'About',
           link      : '/about',
           icon      : 'fa-info-circle',
           openNewTab: false,
@@ -65,13 +65,6 @@ export default {
     }
   },
   methods: {
-    goTo (url, openNewTab) {
-      if (openNewTab) {
-        window.open(url, '_blank')
-      } else {
-        location.href = url
-      }
-    },
     pageChange (item) {
       if (item.openNewTab) {
         window.open(item.link, '_blank')
@@ -102,7 +95,7 @@ ons-list-item
   background: #e0e0e0
   border: 2px solid #000000
   border-radius: 4px
-  padding: 3px
+  padding: 3px 3px 0 3px
   margin: 3px
 .shareIcon
   width: 18px

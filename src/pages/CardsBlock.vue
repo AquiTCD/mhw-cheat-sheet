@@ -5,6 +5,13 @@
     :key="mons.id"
     :mons="mons"
   )
+  v-ons-card(v-if="!selectedMonsters.length")
+    .type.disabled
+      | 種別
+    .title.disabled
+      | 別名 名称
+    .weakness.disabled
+      | 弱点
 </template>
 
 <script>
@@ -23,5 +30,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-
+.disabled
+  color: #BDBDBD
 </style>
