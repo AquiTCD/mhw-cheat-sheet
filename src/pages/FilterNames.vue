@@ -50,7 +50,7 @@ export default {
   },
   computed: {
     monsters () {
-      return this.$store.getters.filterdMonstersByTypes
+      return this.$store.getters.filteredMonstersByKeywords
     },
   },
   methods: {

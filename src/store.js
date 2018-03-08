@@ -5,6 +5,7 @@ import monsters from '@/monsters.yml'
 const state = {
   monsters   : monsters,
   typesFilter: [],
+  keywords   : '',
 }
 const getters = {
   allMonsters: state => {
@@ -13,13 +14,42 @@ const getters = {
   allMonsterTypes: state => {
     return _.uniq(_.map(state.monsters, 'type'), false)
   },
-  filterdMonstersByTypes: state => {
+  filteredMonstersByTypes: state => {
     return _.filter(state.monsters, monster =>
       state.typesFilter.some(type => type === monster.type)
     )
   },
   selectedMonsters: (state, getters) => {
-    return _.filter(getters.filterdMonstersByTypes, { isSelected: true, })
+    return _.filter(getters.filteredMonstersByKeywords, { isSelected: true, })
+  },
+  filteredMonstersByKeywords: (state, getters) => {
+    if (state.keywords.trim() === '') {
+      return getters.filteredMonstersByTypes
+    } else {
+      // let parsedKeywordsWithOR = state.keywords.split(' OR ')
+      // state.keywords.forEach(words => keywords.push(words.split(' ')))
+      let ids = []
+      let keywords = state.keywords.split(' ')
+      keywords.forEach(word => {
+        let idsOfWord = []
+        getters.filteredMonstersByTypes.forEach(mons => {
+          if (mons.name.includes(word)) {
+            idsOfWord.push(mons.id)
+          }
+        })
+        if (ids.length === 0) {
+          ids = idsOfWord
+        } else {
+          ids = _.intersection(ids, idsOfWord)
+        }
+      })
+      return _.filter(getters.filteredMonstersByTypes, monster =>
+        ids.some(id => id === monster.id)
+      )
+    }
+  },
+  filteredMonsters: (state, getters) => {
+    return getters.selectedMonsters
   },
   filteredTypes: state => {
     return _(state.typesFilter).value()
@@ -48,6 +78,9 @@ const actions = {
   OFF_ALL_MONSTER_VISIBLITY ({ commit, }) {
     commit('DESELECT_ALL_MONSTERS')
   },
+  UPDATE_KEYWORDS ({ commit, }, keywords) {
+    commit('UPDATE_KEYWORDS', keywords)
+  },
 }
 const mutations = {
   ADD_FILTER (state, value) {
@@ -75,6 +108,9 @@ const mutations = {
     state.monsters.forEach(function (monster) {
       monster.isSelected = false
     })
+  },
+  UPDATE_KEYWORDS (state, keywords) {
+    state.keywords = keywords
   },
 }
 Vue.use(Vuex)

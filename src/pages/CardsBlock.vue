@@ -2,11 +2,11 @@
 .cardsBlock
   transition-group(name="blur" tag="div")
     card-item(
-      v-for="mons in selectedMonsters"
+      v-for="mons in filteredMonsters"
       :key="mons.id"
       :mons="mons"
     )
-    v-ons-card(v-if="!selectedMonsters.length" :key="'dammy'")
+    v-ons-card(v-if="!filteredMonsters.length" :key="'dammy'")
       .type.disabled
         | 種別
       .title.disabled
@@ -23,8 +23,8 @@ export default {
     CardItem,
   },
   computed: {
-    selectedMonsters () {
-      return this.$store.getters.selectedMonsters
+    filteredMonsters () {
+      return this.$store.getters.filteredMonsters
     },
   },
 }

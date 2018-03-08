@@ -40,7 +40,9 @@ export { default as VOnsPage } from 'vue-onsenui/esm/components/VOnsPage'
 // export { default as VOnsRange } from 'vue-onsenui/esm/components/VOnsRange'
 // export { default as VOnsRipple } from 'vue-onsenui/esm/components/VOnsRipple'
 export { default as VOnsRow } from 'vue-onsenui/esm/components/VOnsRow'
-// export { default as VOnsSearchInput } from 'vue-onsenui/esm/components/VOnsSearchInput'
+export {
+  default as VOnsSearchInput,
+} from 'vue-onsenui/esm/components/VOnsSearchInput'
 // export { default as VOnsSegment } from 'vue-onsenui/esm/components/VOnsSegment'
 // export { default as VOnsSelect } from 'vue-onsenui/esm/components/VOnsSelect'
 // export { default as VOnsSpeedDial } from 'vue-onsenui/esm/components/VOnsSpeedDial'

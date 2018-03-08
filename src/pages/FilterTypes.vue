@@ -4,7 +4,7 @@ v-ons-list
     @click="toggleOpen()"
   )
     i.fa(:class="isOpen ? 'fa-chevron-down' : 'fa-chevron-right'").center
-    | &nbsp; 竜種フィルタ
+    | &nbsp; 種別
     .buttons
       v-ons-button.button(
         modifier="outline"
