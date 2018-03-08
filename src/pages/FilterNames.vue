@@ -14,28 +14,29 @@ v-ons-list
         modifier="normal"
         @click.stop="onAllcheckbox()"
       ) 全てオン
-  v-ons-list-item(
-    tappable
-    v-for="mons in monsters"
-    :key="mons.id"
-    :name="mons.name"
-    @click.stop="toggleCheck(mons.id)"
-    v-show="isOpen"
-  )
-    label.left
-      v-ons-checkbox(
-        :input-id="mons.id"
-        :value="mons.isSelected"
-        v-model="mons.isSelected"
-        @click="toggleCheck(mons.id)"
-      )
-    label.center(:for="mons.id")
-      | {{ mons.name }}
-  v-ons-list-item(v-if="!monsters.length" v-show="isOpen")
-    label.left
-      v-ons-checkbox(disabled)
-    label.center.disabled
-      | モンスター名
+  transition-group(name="accordion" tag="div")
+    v-ons-list-item(
+      tappable
+      v-for="mons in monsters"
+      :key="mons.id"
+      :name="mons.name"
+      @click.stop="toggleCheck(mons.id)"
+      v-show="isOpen"
+    )
+      label.left
+        v-ons-checkbox(
+          :input-id="mons.id"
+          :value="mons.isSelected"
+          v-model="mons.isSelected"
+          @click="toggleCheck(mons.id)"
+        )
+      label.center(:for="mons.id")
+        | {{ mons.name }}
+    v-ons-list-item(v-if="!monsters.length" v-show="isOpen" :key="'dammy'")
+      label.left
+        v-ons-checkbox(disabled)
+      label.center.disabled
+        | モンスター名
 </template>
 
 <script>
@@ -83,6 +84,12 @@ export default {
   margin-right: 7px
 .disabled
   color: #BDBDBD
-.list-enter-active, .list-leave-active
-  transition: opacity 5s
+.accordion-enter-active, .accordion-leave-active
+  transition: all .5s
+.accordion-leave-to, .accordion-enter
+  height: 0
+  opacity: 0
+.accordion-leave, .accordion-enter-to
+  height: 46px
+  opacity: 1
 </style>

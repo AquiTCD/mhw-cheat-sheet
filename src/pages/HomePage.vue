@@ -10,7 +10,7 @@
           )
       .center
         | {{ msg }}
-    .ad
+    .ad(v-if="NODE_ENV === 'production'")
       span.pr - スポンサードリンク -
       Adsense(
         data-ad-client="ca-pub-5201227009100177"

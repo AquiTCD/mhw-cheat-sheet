@@ -14,23 +14,24 @@ v-ons-list
         modifier="normal"
         @click.stop="onAllSwitch()"
       ) 全てオン
-  v-ons-list-item(
-    tappable
-    v-for="(type, index) in monsterTypes"
-    :for="type + index"
-    :key="type + index"
-    @click.stop="toggleSwitch(type)"
-    v-show="isOpen"
-  )
-    label.center
-      | {{ type }}
-    label.right
-      v-ons-switch(
-        :input-id="type + index"
-        :checked="isChecked(type)"
-        @change.stop="toggleSwitch(type)"
-        @click.prevent="toggleSwitch(type)"
-      )
+  transition-group(name="accordion" tag="div")
+    v-ons-list-item(
+      tappable
+      v-for="(type, index) in monsterTypes"
+      :for="type + index"
+      :key="type + index"
+      @click.stop="toggleSwitch(type)"
+      v-show="isOpen"
+    )
+      label.center
+        | {{ type }}
+      label.right
+        v-ons-switch(
+          :input-id="type + index"
+          :checked="isChecked(type)"
+          @change.stop="toggleSwitch(type)"
+          @click.prevent="toggleSwitch(type)"
+        )
 </template>
 
 <script>
@@ -79,4 +80,12 @@ export default {
   line-height: 1.2
 .button:not(:last-of-type)
   margin-right: 7px
+.accordion-enter-active, .accordion-leave-active
+  transition: all .5s
+.accordion-leave-to, .accordion-enter
+  height: 0
+  opacity: 0
+.accordion-leave, .accordion-enter-to
+  height: 56px
+  opacity: 1
 </style>
