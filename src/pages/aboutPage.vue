@@ -2,6 +2,13 @@
 .about
   h2.header About
   v-ons-card
+    .date 2018-03-08
+    .title 0.3.0
+    ul
+      li アコーディオンの開閉時、項目増減時にアニメーションを追加
+      li キーワードによる絞り込み検索機能を実装
+      li 軽微な文言の修正
+  v-ons-card
     .date 2018-03-07
     .title 0.2.2
     ul

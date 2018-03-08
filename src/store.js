@@ -26,21 +26,32 @@ const getters = {
     if (state.keywords.trim() === '') {
       return getters.filteredMonstersByTypes
     } else {
-      // let parsedKeywordsWithOR = state.keywords.split(' OR ')
-      // state.keywords.forEach(words => keywords.push(words.split(' ')))
       let ids = []
-      let keywords = state.keywords.split(' ')
-      keywords.forEach(word => {
-        let idsOfWord = []
-        getters.filteredMonstersByTypes.forEach(mons => {
-          if (mons.name.includes(word)) {
-            idsOfWord.push(mons.id)
+      let kanaKeywords = state.keywords.replace(/[ぁ-ん]/g, s => {
+        return String.fromCharCode(s.charCodeAt(0) + 0x60)
+      })
+      let keywords = kanaKeywords.split(/\s+OR\s+/)
+      keywords.forEach(chunk => {
+        let chunkIds = []
+        let words = chunk.split(/\s+|\s+AND\s+/)
+        words.forEach(word => {
+          let idsOfWord = []
+          getters.filteredMonstersByTypes.forEach(mons => {
+            let regexp = new RegExp(word)
+            if (regexp.test(`${mons.alias}${mons.name}`)) {
+              idsOfWord.push(mons.id)
+            }
+          })
+          if (chunkIds.length === 0) {
+            chunkIds = idsOfWord
+          } else {
+            chunkIds = _.intersection(chunkIds, idsOfWord)
           }
         })
         if (ids.length === 0) {
-          ids = idsOfWord
+          ids = chunkIds
         } else {
-          ids = _.intersection(ids, idsOfWord)
+          ids = _.union(ids, chunkIds)
         }
       })
       return _.filter(getters.filteredMonstersByTypes, monster =>
