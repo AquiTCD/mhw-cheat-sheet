@@ -39,7 +39,7 @@ export default {
       links: [
         {
           label     : 'メインページ',
-          link      : '/main',
+          link      : '/',
           icon      : 'fa-book',
           openNewTab: false,
         },
