@@ -3,7 +3,6 @@ v-ons-page
   v-ons-toolbar(modifier="transparent")
   .header
     img(src="@/assets/icon.png" alt="icon")
-
   v-ons-list-title Menu
   v-ons-list
     v-ons-list-item(
@@ -39,24 +38,28 @@ export default {
       links: [
         {
           label     : 'メインページ',
+          name      : 'main',
           link      : '/',
           icon      : 'fa-book',
           openNewTab: false,
         },
         {
           label     : 'FAQ',
+          name      : 'faq',
           link      : '/faq',
           icon      : 'fa-question-circle',
           openNewTab: false,
         },
         {
           label     : '問題報告',
+          name      : 'feedback',
           link      : '/feedback',
           icon      : 'fa-commenting',
           openNewTab: false,
         },
         {
           label     : 'About',
+          name      : 'about',
           link      : '/about',
           icon      : 'fa-info-circle',
           openNewTab: false,
@@ -67,9 +70,15 @@ export default {
   methods: {
     pageChange (item) {
       if (item.openNewTab) {
-        window.open(item.link, '_blank')
+        window.open(item.name, '_blank')
       } else {
-        this.$router.push(item.link)
+        this.$router.push({
+          name  : item.name,
+          params: {
+            lang: this.$route.params.lang,
+          },
+        })
+        this.$store.commit('splitter/toggle', false)
       }
     },
   },

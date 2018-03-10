@@ -10,6 +10,7 @@ import router from './router'
 import Vue from 'vue'
 import $ons from 'vue-onsenui/esm'
 import * as VOns from './vue-onsen-components'
+import VueI18n from 'vue-i18n'
 import store from './store'
 import App from './App'
 
@@ -19,7 +20,7 @@ Object.values(VOns).forEach(comp => Vue.component(comp.name, comp))
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key])
 })
-
+Vue.use(VueI18n)
 Vue.use(require('vue-script2'))
 
 Vue.use(Ads.Adsense)

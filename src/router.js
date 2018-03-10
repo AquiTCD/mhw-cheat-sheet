@@ -6,28 +6,28 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path     : '/',
+      path     : '/:lang/',
       name     : 'main',
       component: require('@/pages/MainPage').default,
     },
     {
-      path     : '/faq',
+      path     : '/:lang/faq',
       name     : 'faq',
       component: require('@/pages/FAQPage').default,
     },
     {
-      path     : '/feedback',
+      path     : '/:lang/feedback',
       name     : 'feedback',
       component: require('@/pages/feedbackPage').default,
     },
     {
-      path     : '/about',
+      path     : '/:lang/about',
       name     : 'about',
       component: require('@/pages/aboutPage').default,
     },
     {
       path    : '*',
-      redirect: '/',
+      redirect: '/ja/',
     },
   ],
 })
