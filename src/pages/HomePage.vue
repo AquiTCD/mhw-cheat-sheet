@@ -17,7 +17,8 @@
         data-ad-slot="4809633238"
       )
     .main
-      router-view
+      transition(name="page")
+        router-view
 </template>
 
 <script>
@@ -53,4 +54,18 @@ ons-list-item, ons-card
 .pr
   font-size: 9px
   color: #BDBDBD
+.page-enter-active, .page-leave-active
+  transition: all .6s
+.page-enter
+  margin-right: -100%
+  margin-left: 100%
+  opacity: 0
+.page-leave-to
+  margin-right: 100%
+  margin-left: -100%
+  opacity: 0
+.page-leave, .page-enter-to
+  margin-left: 0
+  margin-right: 0
+  opacity: 1
 </style>

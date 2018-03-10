@@ -38,7 +38,7 @@ export default {
 
 <style lang="stylus">
 ons-splitter-side[side=left][animation=overlay]
-  border-right: 2px solid #424242
+  border-right: 2px solid #9e9e9e
 .list-header
   font-weight: bold
   line-height: 2.4

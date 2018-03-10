@@ -77,6 +77,7 @@ export default {
   right: 15px
 .button
   font-size: 0.8em
+.button:not(.button--material)
   line-height: 1.2
 .button:not(:last-of-type)
   margin-right: 7px

@@ -18,12 +18,12 @@ export default new Router({
     {
       path     : '/:lang/feedback',
       name     : 'feedback',
-      component: require('@/pages/feedbackPage').default,
+      component: require('@/pages/FeedbackPage').default,
     },
     {
       path     : '/:lang/about',
       name     : 'about',
-      component: require('@/pages/aboutPage').default,
+      component: require('@/pages/AboutPage').default,
     },
     {
       path    : '*',
