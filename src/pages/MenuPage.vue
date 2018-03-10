@@ -32,7 +32,7 @@ v-ons-page
 
 <script>
 export default {
-  name: 'menu',
+  name: 'menu-page',
   data () {
     return {
       links: [

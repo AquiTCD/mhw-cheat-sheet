@@ -10,6 +10,13 @@
           )
       .center
         | {{ msg }}
+      .right
+        v-ons-toolbar-button(
+          @click="toggleLocale()"
+        )
+          v-ons-icon(
+            icon="fa-language"
+          )
     .ad
       span.pr - スポンサードリンク -
       Adsense(
@@ -28,12 +35,28 @@ export default {
   name: 'home',
   data () {
     return {
-      msg: 'MHW WeakPoints CheatSheet',
+      msg: 'MHW WeakPoints CS',
     }
   },
   components: {
     FiltersBlock,
     CardsBlock,
+  },
+  methods: {
+    toggleLocale () {
+      let lang
+      if (this.$route.params.lang === 'ja') {
+        lang = 'en'
+      } else {
+        lang = 'ja'
+      }
+      this.$router.push({
+        name  : this.$route.params.name,
+        params: {
+          lang: lang,
+        },
+      })
+    },
   },
 }
 </script>

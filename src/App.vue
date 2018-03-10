@@ -29,6 +29,18 @@ export default {
       },
     },
   },
+  watch: {
+    '$route' (to, from) {
+      if (from.params.lang !== to.params.lang) {
+        this.$router.push({
+          name  : to.name,
+          params: {
+            lang: to.params.lang,
+          },
+        })
+      }
+    },
+  },
   components: {
     HomePage,
     MenuPage,

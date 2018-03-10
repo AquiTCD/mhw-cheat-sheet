@@ -13,7 +13,6 @@ import * as VOns from './vue-onsen-components'
 import VueI18n from 'vue-i18n'
 import store from './store'
 import App from './App'
-
 Vue.config.productionTip = false
 Vue.use($ons)
 Object.values(VOns).forEach(comp => Vue.component(comp.name, comp))

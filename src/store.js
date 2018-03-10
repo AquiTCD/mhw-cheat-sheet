@@ -92,6 +92,13 @@ const actions = {
   UPDATE_KEYWORDS ({ commit, }, keywords) {
     commit('UPDATE_KEYWORDS', keywords)
   },
+  // TOGGLE_LANG ({ commit, }) {
+  //   if (state.route.params.lang === 'en') {
+  //     commit('CHANGE_LANG', 'ja')
+  //   } else {
+  //     commit('CHANGE_LANG', 'en')
+  //   }
+  // },
 }
 const mutations = {
   ADD_FILTER (state, value) {
@@ -123,6 +130,9 @@ const mutations = {
   UPDATE_KEYWORDS (state, keywords) {
     state.keywords = keywords
   },
+  // CHANGE_LANG (stete, lang) {
+  //   state.route.params.lang = lang
+  // },
 }
 Vue.use(Vuex)
 
