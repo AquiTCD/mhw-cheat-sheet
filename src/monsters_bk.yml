@@ -1,0 +1,1458 @@
+- id: 0
+  isSelected: false
+  type: 牙竜種
+  alias: 賊竜
+  name: ドスジャグラス
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    前脚:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+    胴:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    後脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+  elements:
+    火: 3
+    水: 0
+    雷: 2
+    氷: 2
+    龍: 1
+  status:
+    毒: 3
+    睡眠: 3
+    麻痺: 3
+    爆破: 3
+    気絶: 3
+- id: 1
+  isSelected: false
+  type: 鳥竜種
+  alias: 掻鳥
+  name: クルルヤック
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    前脚:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    胴:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    後脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+  elements:
+    火: 2
+    水: 3
+    雷: 2
+    氷: 2
+    龍: 2
+  status:
+    毒: 2
+    睡眠: 2
+    麻痺: 2
+    爆破: 2
+    気絶: 2
+- id: 2
+  isSelected: false
+  type: 鳥竜種
+  alias: 毒妖鳥
+  name: プケプケ
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    翼:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+    背中:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+  elements:
+    火: 2
+    水: 0
+    雷: 3
+    氷: 2
+    龍: 1
+  status:
+    毒: 1
+    睡眠: 3
+    麻痺: 3
+    爆破: 2
+    気絶: 2
+- id: 3
+  isSelected: false
+  type: 獣竜種
+  alias: 土砂竜
+  name: ボルボロス
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    前脚:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    胴:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    脚:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+  elements:
+    火: '3-0'
+    水: '0-3'
+    雷: 0
+    氷: 2
+    龍: 1
+  status:
+    毒: 3
+    睡眠: 2
+    麻痺: 3
+    爆破: 3
+    気絶: 1
+- id: 4
+  isSelected: false
+  type: 魚竜種
+  alias: 泥魚竜
+  name: ジュラトドス
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    胴:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    脚:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 2
+  elements:
+    火: '1-0'
+    水: '0-3'
+    雷: '3-0'
+    氷: 1
+    龍: 1
+  status:
+    毒: 2
+    睡眠: 1
+    麻痺: 2
+    爆破: 1
+    気絶: 3
+- id: 5
+  isSelected: false
+  type: 牙竜種
+  alias: 飛雷竜
+  name: トビカガチ
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+    前脚:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    背中:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    後脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+  elements:
+    火: 2
+    水: 3
+    雷: 0
+    氷: 2
+    龍: 1
+  status:
+    毒: 3
+    睡眠: 2
+    麻痺: 2
+    爆破: 2
+    気絶: 2
+- id: 6
+  isSelected: false
+  type: 獣竜種
+  alias: 蛮頭竜
+  name: アンジャナフ
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    前脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    胴:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    脚:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+  elements:
+    火: 0
+    水: 3
+    雷: 2
+    氷: 2
+    龍: 1
+  status:
+    毒: 2
+    睡眠: 2
+    麻痺: 2
+    爆破: 1
+    気絶: 2
+- id: 7
+  isSelected: false
+  type: 飛竜種
+  alias: 雌火竜
+  name: リオレイア
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    翼:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+    背中:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+  elements:
+    火: 0
+    水: 1
+    雷: 2
+    氷: 1
+    龍: 3
+  status:
+    毒: 1
+    睡眠: 2
+    麻痺: 2
+    爆破: 1
+    気絶: 3
+- id: 8
+  isSelected: false
+  type: 鳥竜種
+  alias: 眩鳥
+  name: ツィツィヤック
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    前脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    胴:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    後脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+  elements:
+    火: 2
+    水: 2
+    雷: 3
+    氷: 3
+    龍: 2
+  status:
+    毒: 2
+    睡眠: 2
+    麻痺: 2
+    爆破: 2
+    気絶: 2
+- id: 9
+  isSelected: false
+  type: 飛竜種
+  alias: 浮空竜
+  name: パオウルムー
+  parts:
+    頭:
+      breakableType:
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+    頸袋:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    翼:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    背中:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+  elements:
+    火: 3
+    水: 0
+    雷: 2
+    氷: 1
+    龍: 1
+  status:
+    毒: 2
+    睡眠: 2
+    麻痺: 2
+    爆破: 3
+    気絶: 3
+- id: 10
+  isSelected: false
+  type: 牙竜種
+  alias: 痺賊竜
+  name: ドスギルオス
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    前脚:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+    胴:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    後脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬: 2
+        打: 2
+        弾: 1
+  elements:
+    火: 2
+    水: 3
+    雷: 0
+    氷: 2
+    龍: 1
+  status:
+    毒: 2
+    睡眠: 3
+    麻痺: 1
+    爆破: 2
+    気絶: 2
+- id: 11
+  isSelected: false
+  type: 獣竜種
+  alias: 骨鎚竜
+  name: ラドバルキン
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    前脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    背中:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    脚:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬:
+        打:
+        弾:
+  elements:
+    火: 1
+    水: 1
+    雷: 1
+    氷: 2
+    龍: 3
+  status:
+    毒: 2
+    睡眠: 1
+    麻痺: 2
+    爆破: 3
+    気絶: 2
+- id: 12
+  isSelected: false
+  type: 飛竜種
+  alias: 風漂竜
+  name: レイギエナ
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    翼:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+    背中:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+  elements:
+    火: 2
+    水: 1
+    雷: 3
+    氷: 0
+    龍: 1
+  status:
+    毒: 3
+    睡眠: 2
+    麻痺: 2
+    爆破: 2
+    気絶: 2
+- id: 13
+  isSelected: false
+  type: 牙竜種
+  alias: 惨爪竜
+  name: オドガロン
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    前脚:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+    胴:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    後脚:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+  elements:
+    火: 1
+    水: 1
+    雷: 2
+    氷: 3
+    龍: 0
+  status:
+    毒: 1
+    睡眠: 2
+    麻痺: 3
+    爆破: 2
+    気絶: 2
+- id: 14
+  isSelected: false
+  type: 飛竜種
+  alias: 火竜
+  name: リオレウス
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    翼:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+    背中:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+  elements:
+    火: 0
+    水: 1
+    雷: 2
+    氷: 1
+    龍: 3
+  status:
+    毒: 1
+    睡眠: 2
+    麻痺: 2
+    爆破: 1
+    気絶: 2
+- id: 15
+  isSelected: false
+  type: 飛竜種
+  alias: 角竜
+  name: ディアブロス
+  parts:
+    角:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    頭:
+      breakableType:
+      weakness:
+        斬: 2
+        打: 3
+        弾: 2
+    翼:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 1
+        弾: 3
+    胴:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 2
+    脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬:
+        打:
+        弾:
+  elements:
+    火: 0
+    水: 2
+    雷: 1
+    氷: 3
+    龍: 2
+  status:
+    毒: 2
+    睡眠: 2
+    麻痺: 3
+    爆破: 2
+    気絶: 1
+- id: 16
+  isSelected: false
+  type: 古龍種
+  alias: 幻獣
+  name: キリン
+  parts:
+    頭/角:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 2
+    背中:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+  elements:
+    火: 3
+    水: 2
+    雷: 0
+    氷: 2
+    龍: 1
+  status:
+    毒: 1
+    睡眠: 2
+    麻痺: 0
+    爆破: 2
+    気絶: 1
+- id: 17
+  isSelected: false
+  type: 古龍種
+  alias:  熔山龍
+  name: ゾラ マグダラオス
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 1
+        打: 1
+        弾: 1
+    胴:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+    排熱:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+  elements:
+    火: 0
+    水: 3
+    雷: 1
+    氷: 2
+    龍: 3
+  status:
+    毒: 0
+    睡眠: 0
+    麻痺: 0
+    爆破: 0
+    気絶: 0
+- id: 18
+  isSelected: false
+  type: 牙竜種
+  alias: 岩賊竜
+  name: ドドガマル
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    前脚:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    胴:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    後脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+  elements:
+    火: 0
+    水: 2
+    雷: 3
+    氷: 2
+    龍: 1
+  status:
+    毒: 3
+    睡眠: 2
+    麻痺: 2
+    爆破: 1
+    気絶: 2
+- id: 19
+  isSelected: false
+  type: 飛竜種
+  alias: 桜火竜
+  name: リオレイア 亜種
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    翼:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+    背中:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+  elements:
+    火: 0
+    水: 1
+    雷: 2
+    氷: 1
+    龍: 3
+  status:
+    毒: 1
+    睡眠: 2
+    麻痺: 2
+    爆破: 1
+    気絶: 3
+- id: 20
+  isSelected: false
+  type: 飛竜種
+  alias: 爆鱗竜
+  name: バゼルギウス
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    翼:
+      breakableType: 破壊
+      weakness:
+        斬: 1
+        打: 1
+        弾: 3
+    背中:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+  elements:
+    火: 0
+    水: 1
+    雷: 3
+    氷: 2
+    龍: 2
+  status:
+    毒: 2
+    睡眠: 2
+    麻痺: 2
+    爆破: 1
+    気絶: 1
+- id: 21
+  isSelected: false
+  type: 魚竜種
+  alias: 溶岩竜
+  name: ヴォルガノス
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+      斬: 3
+      打: 3
+      弾: 3
+    胴:
+      breakableType: 破壊
+      weakness:
+      斬: 3
+      打: 2
+      弾: 3
+    脚:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+  elements:
+    火: '0-1'
+    水: '3-2'
+    雷: '2-0'
+    氷: '2-0'
+    龍: 1
+  status:
+    毒: 3
+    睡眠: 1
+    麻痺: 2
+    爆破: 1
+    気絶: 2
+- id: 22
+  isSelected: false
+  type: 獣竜種
+  alias: 爆鎚竜
+  name: ウラガンキン
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    前脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    胴:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+    脚:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬:
+        打:
+        弾:
+  elements:
+    火: 0
+    水: 3
+    雷: 1
+    氷: 2
+    龍: 2
+  status:
+    毒: 3
+    睡眠: 1
+    麻痺: 2
+    爆破: 1
+    気絶: 3
+- id: 23
+  isSelected: false
+  type: 飛竜種
+  alias:  蒼火竜
+  name: リオレウス 亜種
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    翼:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+    背中:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+  elements:
+    火: 0
+    水: 1
+    雷: 1
+    氷: 2
+    龍: 3
+  status:
+    毒: 1
+    睡眠: 2
+    麻痺: 2
+    爆破: 1
+    気絶: 2
+- id: 24
+  isSelected: false
+  type: 飛竜種
+  alias: 黒角竜
+  name: ディアブロス 亜種
+  parts:
+    角:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    頭:
+      breakableType:
+      weakness:
+        斬: 2
+        打: 3
+        弾: 2
+    翼:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 1
+        弾: 3
+    胴:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 2
+    脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬:
+        打:
+        弾:
+  elements:
+    火: 0
+    水: 2
+    雷: 1
+    氷: 3
+    龍: 0
+  status:
+    毒: 2
+    睡眠: 2
+    麻痺: 3
+    爆破: 2
+    気絶: 1
+- id: 25
+  isSelected: false
+  type: 古龍種
+  alias: 滅尽龍
+  name: ネルギガンテ
+  parts:
+    角:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    頭:
+      breakableType:
+      weakness:
+        斬: 2
+        打: 3
+        弾: 2
+    前脚:
+      breakableType:
+      weakness:
+        斬: 3
+        打: 2
+        弾: 2
+    胴:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    後脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬:
+        打:
+        弾:
+  elements:
+    火: 1
+    水: 1
+    雷: 3
+    氷: 1
+    龍: 2
+  status:
+    毒: 2
+    睡眠: 2
+    麻痺: 2
+    爆破: 2
+    気絶: 2
+- id: 26
+  isSelected: false
+  type: 古龍種
+  alias: 炎王龍
+  name: テオ テスカトル
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    翼:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+    前脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    胴:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    後脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+  elements:
+    火: 0
+    水: 3
+    雷: 1
+    氷: 3
+    龍: 1
+  status:
+    毒: 2
+    睡眠: 1
+    麻痺: 1
+    爆破: 1
+    気絶: 2
+- id: 27
+  isSelected: false
+  type: 古龍種
+  alias: 鋼龍
+  name: クシャルダオラ
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 2
+    翼:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    前脚:
+      breakableType:
+      weakness:
+        斬: 2
+        打: 2
+        弾: 2
+    胴:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    後脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬: 2
+        打: 2
+        弾: 3
+  elements:
+    火: 1
+    水: 0
+    雷: 3
+    氷: 0
+    龍: 2
+  status:
+    毒: 3
+    睡眠: 1
+    麻痺: 1
+    爆破: 3
+    気絶: 2
+- id: 28
+  isSelected: false
+  type: 古龍種
+  alias: 屍套龍
+  name: ヴァルハザク
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 3
+        弾: 2
+    翼:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    前脚:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    胴:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 1
+    後脚:
+      breakableType:
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬: 3
+        打: 1
+        弾: 2
+  elements:
+    火: 3
+    水: 0
+    雷: 1
+    氷: 2
+    龍: 3
+  status:
+    毒: 1
+    睡眠: 1
+    麻痺: 1
+    爆破: 2
+    気絶: 2
+- id: 29
+  isSelected: false
+  type: 古龍種
+  alias: 冥灯龍
+  name: ゼノ ジーヴァ
+  parts:
+    頭:
+      breakableType: 破壊
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+    翼:
+      breakableType: 破壊
+      weakness:
+        斬:
+        打:
+        弾:
+    前脚:
+      breakableType: 破壊
+      weakness:
+        斬: 2
+        打: 2
+        弾: 1
+    胴:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    後脚:
+      breakableType:
+      weakness:
+        斬:
+        打:
+        弾:
+    尻尾:
+      breakableType: 切断
+      weakness:
+        斬: 3
+        打: 3
+        弾: 3
+  elements:
+    火: 2
+    水: 2
+    雷: 2
+    氷: 2
+    龍: 2
+  status:
+    毒: 3
+    睡眠: 0
+    麻痺: 1
+    爆破: 2
+    気絶: 1

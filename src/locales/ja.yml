@@ -1,0 +1,32 @@
+elements:
+  fire: 火
+  water: 水
+  thunder: 雷
+  ice: 氷
+  dragon: 龍
+status:
+  poison: 毒
+  sleep: 睡眠
+  paralysis: 麻痺
+  blast: 爆発
+  stun: 気絶
+weakness-header:
+  parts: 部位
+  break: 破壊
+  cut: 斬
+  strike: 打
+  shoot: 弾
+breakableType:
+  break: 破壊
+  sever: 切断
+  null: ''
+parts:
+  horn: horn
+  head: head
+  neck: neck
+  body: body
+  wing: wing
+  front-legs: front legs
+  back-legs: back legs
+  legs: legs
+  tail: tail

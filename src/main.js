@@ -7,19 +7,19 @@ import 'onsenui/css/onsen-css-components.css'
 import Ads from 'vue-google-adsense'
 import filters from './filters'
 import router from './router'
+import { i18n, } from './i18n-setup'
 import Vue from 'vue'
 import $ons from 'vue-onsenui/esm'
 import * as VOns from './vue-onsen-components'
-import VueI18n from 'vue-i18n'
 import store from './store'
 import App from './App'
+
 Vue.config.productionTip = false
 Vue.use($ons)
 Object.values(VOns).forEach(comp => Vue.component(comp.name, comp))
 Object.keys(filters).forEach(key => {
   Vue.filter(key, filters[key])
 })
-Vue.use(VueI18n)
 Vue.use(require('vue-script2'))
 
 Vue.use(Ads.Adsense)
@@ -33,4 +33,5 @@ new Vue({
   template  : '<App/>',
   components: { App, },
   router,
+  i18n,
 })

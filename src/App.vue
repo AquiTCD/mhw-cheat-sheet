@@ -16,7 +16,6 @@
 <script>
 import HomePage from '@/pages/HomePage'
 import MenuPage from '@/pages/MenuPage'
-
 export default {
   name    : 'app',
   computed: {
@@ -30,7 +29,7 @@ export default {
     },
   },
   watch: {
-    '$route' (to, from) {
+    '$route' (to, from, next) {
       if (from.params.lang !== to.params.lang) {
         this.$router.push({
           name  : to.name,
@@ -38,6 +37,7 @@ export default {
             lang: to.params.lang,
           },
         })
+        this.$i18n.locale = to.params.lang
       }
     },
   },

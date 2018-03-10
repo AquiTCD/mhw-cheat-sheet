@@ -1,0 +1,32 @@
+elements:
+  fire: fire
+  water: water
+  thunder: thunder
+  ice: ice
+  dragon: dragon
+status:
+  poison: poison
+  sleep: sleep
+  paralysis: paralysis
+  blast: blast
+  stun: stun
+weakness-header:
+  parts: parts
+  break: break
+  cut: cut
+  strike: strike
+  shoot: shoot
+breakableType:
+  break: break
+  sever: sever
+  null: ''
+parts:
+  horn: horn
+  head: head
+  neck: neck
+  body: body
+  wing: wing
+  front-legs: front legs
+  back-legs: back legs
+  legs: legs
+  tail: tail

@@ -7,29 +7,29 @@
     table.elements
       thead.elementsThead
         tr
-          th(v-for="(v, k) in mons.elements" v-bind:class="k | keyToClass") {{k}}
+          th(v-for="(v, k) in mons.elements" v-bind:class="k")  {{$t(`elements.${k}`)}}
       tbody
         tr
           td(v-for="(v, k) in mons.elements" v-html="stars(v)")
     table.status
       thead.statusThead
         tr
-          th(v-for="(v, k) in mons.status" v-bind:class="k | keyToClass") {{k}}
+          th(v-for="(v, k) in mons.status" v-bind:class="k") {{$t(`status.${k}`)}}
       tbody
         tr
           td(v-for="(v, k) in mons.status" v-html="stars(v)")
     table.weakness
       thead.weaknessThead
         tr
-          th.weaknessHeader 部位
-          th.weaknessHeader 破壊
-          th.weaknessHeader 斬
-          th.weaknessHeader 打
-          th.weaknessHeader 弾
+          th.weaknessHeader {{$t(`weakness-header.parts`)}}
+          th.weaknessHeader {{$t(`weakness-header.break`)}}
+          th.weaknessHeader {{$t(`weakness-header.cut`)}}
+          th.weaknessHeader {{$t(`weakness-header.strike`)}}
+          th.weaknessHeader {{$t(`weakness-header.shoot`)}}
       tbody.weaknessTbody
         tr(v-for="(v, k) in mons.parts")
-          th.weaknessHeader {{ k }}
-          td(v-bind:class="breakableTypeToClass(v.breakableType)") {{ v.breakableType }}
+          th.weaknessHeader {{$t(`parts.${k}`)}}
+          td(v-bind:class="v.breakableType") {{ $t(`breakableType.${v.breakableType}`)}}
           td(v-for="value in v.weakness" v-html="weakness(value)")
 </template>
 
@@ -112,9 +112,9 @@ export default {
   background: #D7CCC8
 .stun
   background: #FFE0B2
-.breakable
+.break
   background: #FFE082
-.cuttable
+.sever
   background: #FFAB91
 </style>
 <style lang="stylus">
