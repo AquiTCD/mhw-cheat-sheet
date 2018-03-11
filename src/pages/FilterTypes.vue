@@ -24,7 +24,7 @@ v-ons-list
       v-show="isOpen"
     )
       label.center
-        | {{ type }}
+        | {{$t(`monster.types.${type}`)}}
       label.right
         v-ons-switch(
           :input-id="type + index"

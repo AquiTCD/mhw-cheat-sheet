@@ -1,32 +1,116 @@
+ui:
+  menus:
+    main: Main
+    faq: FAQ
+    feedback: Feedback
+    About: About
+  types: Types
+  keywords: Keywords
+  names: Names
+  all-on: ALL ON
+  all-off: ALL OFF
+  clear: CLEAR
 elements:
-  fire: fire
-  water: water
-  thunder: thunder
-  ice: ice
-  dragon: dragon
+  fire: Fire
+  water: Water
+  thunder: Thunder
+  ice: Ice
+  dragon: Dragon
 status:
-  poison: poison
-  sleep: sleep
-  paralysis: paralysis
-  blast: blast
-  stun: stun
+  poison: Poison
+  sleep: Sleep
+  paralysis: Paralysis
+  blast: Blast
+  stun: Stun
 weakness-header:
-  parts: parts
-  break: break
-  cut: cut
-  strike: strike
-  shoot: shoot
+  parts: Parts
+  break: Break
+  cutting: Cutting
+  impact: Impact
+  shot: Shot
 breakableType:
-  break: break
-  sever: sever
+  break: Break
+  sever: Sever
   null: ''
 parts:
-  horn: horn
-  head: head
-  neck: neck
-  body: body
-  wing: wing
-  front-legs: front legs
-  back-legs: back legs
-  legs: legs
-  tail: tail
+  horn: Horn
+  head: Head
+  neck-pouch: Neck Pouch
+  chest: Chest
+  back: Back
+  wings: Wings
+  fore-legs: Fore Legs
+  rear-legs: Rere Legs
+  legs: Legs
+  tail: Tail
+  magmacore: Magmacore
+monster:
+  types:
+    fanged-wyverns: Fanged Wyverns
+    bird-wyverns: Bird Wyverns
+    brute-wyverns: Brute Wyverns
+    piscine-wyverns: Piscine Wyverns
+    flying-wyverns: Flying Wyverns
+    elder-dragons: Elder Dragons
+  titles:
+    thief-wyvern: Thief Wyvern
+    scratching-bird: Scratching Bird
+    poison-bewitching-bird: Poison Bewitching Bird
+    landslide-wyvern: Landslide Wyvern
+    mud-fish-wyvern: Mud Fish Wyvern
+    flying-thunder-wyvern: Flying Thunder Wyvern
+    fierce-jaw-wyvern: Fierce Jaw Wyvern
+    female-fire-wyvern: Female Fire Wyvern
+    dizzy-bird: Dizzy Bird
+    floating-sky-wyvern: Floating Sky Wyvern
+    paralyzing-thief-wyvern: Paralyzing Thief Wyvern
+    bone-hammer-wyvern: Bone Hammer Wyvern
+    wind-drifting-wyvern: Wind Drifting Wyvern
+    cruel-claw-wyvern: Cruel Claw Wyvern
+    fire-wyvern: Fire Wyvern
+    horned-wyvern: Horned Wyvern
+    phantom-beast: Phantom Beast
+    scorching-mountain-dragon: Scorching Mountain Dragon
+    rock-thief-wyvern: Rock Thief Wyvern
+    cherry-blossom-fire-wyvern: Cherry Blossom Fire Wyvern
+    explosive-scale-wyvern: Explosive Scale Wyvern
+    lava-wyvern: Lava Wyvern
+    bursthammer-wyvern: Burst Hammer Wyvern
+    azure-fire-wyvern: Azure Fire Wyvern
+    black-horn-wyvern: Black Horn Wyvern
+    extinction-dragon: Extinction Dragon
+    flame-king-dragon: Flame King Dragon
+    steel-dragon: Steel Dragon
+    corpse-coat-dragon: Corpse Coat Dragon
+    dark-light-dragon: Dark Light Dragon
+  names:
+    great-jagras: Great Jagras
+    kulu-ya-ku: kulu-Ya-Ku
+    pukei-pukei: Pukei-Pukei
+    barroth: Barroth
+    jyuratodus: Jyuratodus
+    tobi-kadachi: Tobi-Kadachi
+    anjanath: Anjanath
+    rathian: Rathian
+    tzitzi-ya-ku: Tzitzi-Ya-Ku
+    paolumu: Paolumu
+    great-girros: Great Girros
+    radobaan: Radobaan
+    legiana: Legiana
+    odogaron: Odogaron
+    rathalos: Rathalos
+    diablos: Diablos
+    kirin: Kirin
+    zorah-magdaros: Zorah Magdaros
+    dodogama: Dodogama
+    pink-rathian: Pink Rathian
+    bazelgeuse: Bazelgeuse
+    lavasioth: Lavasioth
+    uragaan: Uragaan
+    azure-rathalos: Azure Rathalos
+    black-diablos: Black Diablos
+    nergigante: Nergigante
+    teostra: Teostra
+    kushala-daora: Kushala Daora
+    vaal-hazak: Vaal Hazak
+    xeno-jiiva: Xeno'jiiva

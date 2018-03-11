@@ -1,39 +1,39 @@
 - id: 0
   isSelected: false
-  type: 牙竜種
-  alias: 賊竜
-  name: ドスジャグラス
+  type: fanged-wyverns
+  title: thief-wyvern
+  name: great-jagras
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    front-legs:
+        cutting: 3
+        impact: 3
+        shot: 3
+    fore-legs:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
-    body:
+        cutting: 2
+        impact: 2
+        shot: 2
+    chest:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    back-legs:
+        cutting: 3
+        impact: 3
+        shot: 3
+    rear-legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
   elements:
     fire: 3
     water: 0
@@ -48,40 +48,40 @@
     stun: 3
 - id: 1
   isSelected: false
-  type: 鳥竜種
-  alias: 掻鳥
-  name: クルルヤック
+  type: bird-wyverns
+  title: scratching-bird
+  name: kulu-ya-ku
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    front-legs:
+        cutting: 3
+        impact: 3
+        shot: 3
+    fore-legs:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
-    body:
+        cutting:
+        impact:
+        shot:
+    chest:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
-    back-legs:
+        cutting:
+        impact:
+        shot:
+    rear-legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
   elements:
     fire: 2
     water: 3
@@ -96,40 +96,40 @@
     stun: 2
 - id: 2
   isSelected: false
-  type: 鳥竜種
-  alias: 毒妖鳥
-  name: プケプケ
+  type: bird-wyverns
+  title: poison-bewitching-bird
+  name: pukei-pukei
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    翼:
+        cutting: 3
+        impact: 3
+        shot: 3
+    wings:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
-    背中:
+        cutting: 2
+        impact: 2
+        shot: 2
+    back:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
-    脚:
+        cutting:
+        impact:
+        shot:
+    legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: sever
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
+        cutting: 2
+        impact: 2
+        shot: 2
   elements:
     fire: 2
     water: 0
@@ -144,40 +144,40 @@
     stun: 2
 - id: 3
   isSelected: false
-  type: 獣竜種
-  alias: 土砂竜
-  name: ボルボロス
+  type: brute-wyverns
+  title: landslide-wyvern
+  name: barroth
   parts:
     head:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
-    front-legs:
+        cutting:
+        impact:
+        shot:
+    fore-legs:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    body:
+        cutting: 3
+        impact: 3
+        shot: 3
+    chest:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
-    脚:
+        cutting:
+        impact:
+        shot:
+    legs:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: sever
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
+        cutting: 2
+        impact: 2
+        shot: 2
   elements:
     fire: '3-0'
     water: '0-3'
@@ -192,34 +192,34 @@
     stun: 1
 - id: 4
   isSelected: false
-  type: 魚竜種
-  alias: 泥魚竜
-  name: ジュラトドス
+  type: piscine-wyverns
+  title: mud-fish-wyvern
+  name: jyuratodus
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    body:
+        cutting: 3
+        impact: 3
+        shot: 3
+    chest:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
-    脚:
+        cutting:
+        impact:
+        shot:
+    legs:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 2
+        cutting: 3
+        impact: 3
+        shot: 2
   elements:
     fire: '1-0'
     water: '0-3'
@@ -234,40 +234,40 @@
     stun: 3
 - id: 5
   isSelected: false
-  type: 牙竜種
-  alias: 飛雷竜
-  name: トビカガチ
+  type: fanged-wyverns
+  title: flying-thunder-wyvern
+  name: tobi-kadachi
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
-    front-legs:
+        cutting: 2
+        impact: 2
+        shot: 2
+    fore-legs:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
-    背中:
+        cutting:
+        impact:
+        shot:
+    back:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
-    back-legs:
+        cutting:
+        impact:
+        shot:
+    rear-legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
+        cutting: 3
+        impact: 3
+        shot: 3
   elements:
     fire: 2
     water: 3
@@ -282,40 +282,40 @@
     stun: 2
 - id: 6
   isSelected: false
-  type: 獣竜種
-  alias: 蛮頭竜
-  name: アンジャナフ
+  type: brute-wyverns
+  title: fierce-jaw-wyvern
+  name: anjanath
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    front-legs:
+        cutting: 3
+        impact: 3
+        shot: 3
+    fore-legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
-    body:
+        cutting:
+        impact:
+        shot:
+    chest:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
-    脚:
+        cutting:
+        impact:
+        shot:
+    legs:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: sever
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
+        cutting: 2
+        impact: 2
+        shot: 2
   elements:
     fire: 0
     water: 3
@@ -330,40 +330,40 @@
     stun: 2
 - id: 7
   isSelected: false
-  type: 飛竜種
-  alias: 雌火竜
-  name: リオレイア
+  type: flying-wyverns
+  title: female-fire-wyvern
+  name: rathian
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    翼:
+        cutting: 3
+        impact: 3
+        shot: 3
+    wings:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
-    背中:
+        cutting: 2
+        impact: 2
+        shot: 2
+    back:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
-    脚:
+        cutting:
+        impact:
+        shot:
+    legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: sever
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
+        cutting: 2
+        impact: 2
+        shot: 2
   elements:
     fire: 0
     water: 1
@@ -378,40 +378,40 @@
     stun: 3
 - id: 8
   isSelected: false
-  type: 鳥竜種
-  alias: 眩鳥
-  name: ツィツィヤック
+  type: bird-wyverns
+  title: dizzy-bird
+  name: tzitzi-ya-ku
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    front-legs:
+        cutting: 3
+        impact: 3
+        shot: 3
+    fore-legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
-    body:
+        cutting:
+        impact:
+        shot:
+    chest:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
-    back-legs:
+        cutting:
+        impact:
+        shot:
+    rear-legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
   elements:
     fire: 2
     water: 2
@@ -426,46 +426,46 @@
     stun: 2
 - id: 9
   isSelected: false
-  type: 飛竜種
-  alias: 浮空竜
-  name: パオウルムー
+  type: flying-wyverns
+  title: floating-sky-wyvern
+  name: paolumu
   parts:
     head:
       breakableType:
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
-    頸袋:
+        cutting: 2
+        impact: 2
+        shot: 2
+    neck-pouch:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    翼:
+        cutting: 3
+        impact: 3
+        shot: 3
+    wings:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
-    背中:
+        cutting:
+        impact:
+        shot:
+    back:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
-    脚:
+        cutting:
+        impact:
+        shot:
+    legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
   elements:
     fire: 3
     water: 0
@@ -480,40 +480,40 @@
     stun: 3
 - id: 10
   isSelected: false
-  type: 牙竜種
-  alias: 痺賊竜
-  name: ドスギルオス
+  type: fanged-wyverns
+  title: paralyzing-thief-wyvern
+  name: great-girros
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    front-legs:
+        cutting: 3
+        impact: 3
+        shot: 3
+    fore-legs:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
-    body:
+        cutting: 2
+        impact: 2
+        shot: 2
+    chest:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
-    back-legs:
+        cutting:
+        impact:
+        shot:
+    rear-legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: sever
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 1
+        cutting: 2
+        impact: 2
+        shot: 1
   elements:
     fire: 2
     water: 3
@@ -528,40 +528,40 @@
     stun: 2
 - id: 11
   isSelected: false
-  type: 獣竜種
-  alias: 骨鎚竜
-  name: ラドバルキン
+  type: brute-wyverns
+  title: bone-hammer-wyvern
+  name: radobaan
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    front-legs:
+        cutting: 3
+        impact: 3
+        shot: 3
+    fore-legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
-    背中:
+        cutting:
+        impact:
+        shot:
+    back:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
-    脚:
+        cutting:
+        impact:
+        shot:
+    legs:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
+        cutting: 2
+        impact: 2
+        shot: 2
     tail:
       breakableType: sever
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
   elements:
     fire: 1
     water: 1
@@ -576,40 +576,40 @@
     stun: 2
 - id: 12
   isSelected: false
-  type: 飛竜種
-  alias: 風漂竜
-  name: レイギエナ
+  type: flying-wyverns
+  title: wind-drifting-wyvern
+  name: legiana
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    翼:
+        cutting: 3
+        impact: 3
+        shot: 3
+    wings:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
-    背中:
+        cutting: 2
+        impact: 2
+        shot: 2
+    back:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
-    脚:
+        cutting:
+        impact:
+        shot:
+    legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
+        cutting: 2
+        impact: 2
+        shot: 2
   elements:
     fire: 2
     water: 1
@@ -624,40 +624,40 @@
     stun: 2
 - id: 13
   isSelected: false
-  type: 牙竜種
-  alias: 惨爪竜
-  name: オドガロン
+  type: fanged-wyverns
+  title: cruel-claw-wyvern
+  name: odogaron
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    front-legs:
+        cutting: 3
+        impact: 3
+        shot: 3
+    fore-legs:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
-    body:
+        cutting: 2
+        impact: 2
+        shot: 2
+    chest:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
-    back-legs:
+        cutting:
+        impact:
+        shot:
+    rear-legs:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: sever
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
+        cutting: 2
+        impact: 2
+        shot: 2
   elements:
     fire: 1
     water: 1
@@ -672,40 +672,40 @@
     stun: 2
 - id: 14
   isSelected: false
-  type: 飛竜種
-  alias: 火竜
-  name: リオレウス
+  type: flying-wyverns
+  title: fire-wyvern
+  name: rathalos
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    翼:
+        cutting: 3
+        impact: 3
+        shot: 3
+    wings:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
-    背中:
+        cutting: 2
+        impact: 2
+        shot: 2
+    back:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
-    脚:
+        cutting:
+        impact:
+        shot:
+    legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: sever
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
+        cutting: 2
+        impact: 2
+        shot: 2
   elements:
     fire: 0
     water: 1
@@ -720,46 +720,46 @@
     stun: 2
 - id: 15
   isSelected: false
-  type: 飛竜種
-  alias: 角竜
-  name: ディアブロス
+  type: flying-wyverns
+  title: horned-wyvern
+  name: diablos
   parts:
-    角:
+    horn:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     head:
       breakableType:
       weakness:
-        cut: 2
-        strike: 3
-        shoot: 2
-    翼:
+        cutting: 2
+        impact: 3
+        shot: 2
+    wings:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 1
-        shoot: 3
-    body:
+        cutting: 2
+        impact: 1
+        shot: 3
+    chest:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 2
-    脚:
+        cutting: 3
+        impact: 3
+        shot: 2
+    legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: sever
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
   elements:
     fire: 0
     water: 2
@@ -774,34 +774,34 @@
     stun: 1
 - id: 16
   isSelected: false
-  type: 古龍種
-  alias: 幻獣
-  name: キリン
+  type: elder-dragons
+  title: phantom-beast
+  name: kirin
   parts:
-    頭/角:
+    horn:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 2
-    背中:
+        cutting: 3
+        impact: 3
+        shot: 2
+    back:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
-    脚:
+        cutting:
+        impact:
+        shot:
+    legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
   elements:
     fire: 3
     water: 2
@@ -816,28 +816,28 @@
     stun: 1
 - id: 17
   isSelected: false
-  type: 古龍種
-  alias:  熔山龍
-  name: ゾラ マグダラオス
+  type: elder-dragons
+  title: scorching-mountain-dragon
+  name: zorah-magdaros
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 1
-        strike: 1
-        shoot: 1
-    body:
+        cutting: 1
+        impact: 1
+        shot: 1
+    chest:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
-    排熱:
+        cutting: 2
+        impact: 2
+        shot: 2
+    magmacore:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
+        cutting: 3
+        impact: 3
+        shot: 3
   elements:
     fire: 0
     water: 3
@@ -852,40 +852,40 @@
     stun: 0
 - id: 18
   isSelected: false
-  type: 牙竜種
-  alias: 岩賊竜
-  name: ドドガマル
+  type: fanged-wyverns
+  title: rock-thief-wyvern
+  name: dodogama
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    front-legs:
+        cutting: 3
+        impact: 3
+        shot: 3
+    fore-legs:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
-    body:
+        cutting:
+        impact:
+        shot:
+    chest:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
-    back-legs:
+        cutting:
+        impact:
+        shot:
+    rear-legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: sever
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
+        cutting: 2
+        impact: 2
+        shot: 2
   elements:
     fire: 0
     water: 2
@@ -900,40 +900,40 @@
     stun: 2
 - id: 19
   isSelected: false
-  type: 飛竜種
-  alias: 桜火竜
-  name: リオレイア 亜種
+  type: flying-wyverns
+  title: cherry-blossom-fire-wyvern
+  name: pink-rathian
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    翼:
+        cutting: 3
+        impact: 3
+        shot: 3
+    wings:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
-    背中:
+        cutting: 2
+        impact: 2
+        shot: 2
+    back:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
-    脚:
+        cutting:
+        impact:
+        shot:
+    legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: sever
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
+        cutting: 2
+        impact: 2
+        shot: 2
   elements:
     fire: 0
     water: 1
@@ -948,40 +948,40 @@
     stun: 3
 - id: 20
   isSelected: false
-  type: 飛竜種
-  alias: 爆鱗竜
-  name: バゼルギウス
+  type: flying-wyverns
+  title: explosive-scale-wyvern
+  name: bazelgeuse
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    翼:
+        cutting: 3
+        impact: 3
+        shot: 3
+    wings:
       breakableType: break
       weakness:
-        cut: 1
-        strike: 1
-        shoot: 3
-    背中:
+        cutting: 1
+        impact: 1
+        shot: 3
+    back:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
-    脚:
+        cutting:
+        impact:
+        shot:
+    legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: sever
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
+        cutting: 2
+        impact: 2
+        shot: 2
   elements:
     fire: 0
     water: 1
@@ -996,34 +996,34 @@
     stun: 1
 - id: 21
   isSelected: false
-  type: 魚竜種
-  alias: 溶岩竜
-  name: ヴォルガノス
+  type: piscine-wyverns
+  title: lava-wyvern
+  name: lavasioth
   parts:
     head:
       breakableType: break
       weakness:
-      cut: 3
+      cutting: 3
       打: 3
       弾: 3
-    body:
+    chest:
       breakableType: break
       weakness:
-      cut: 3
+      cutting: 3
       打: 2
       弾: 3
-    脚:
+    legs:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
   elements:
     fire: '0-1'
     water: '3-2'
@@ -1038,40 +1038,40 @@
     stun: 2
 - id: 22
   isSelected: false
-  type: 獣竜種
-  alias: 爆鎚竜
-  name: ウラガンキン
+  type: brute-wyverns
+  title: bursthammer-wyvern
+  name: uragaan
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    front-legs:
+        cutting: 3
+        impact: 3
+        shot: 3
+    fore-legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
-    body:
+        cutting:
+        impact:
+        shot:
+    chest:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
-    脚:
+        cutting: 2
+        impact: 2
+        shot: 2
+    legs:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: sever
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
   elements:
     fire: 0
     water: 3
@@ -1086,40 +1086,40 @@
     stun: 3
 - id: 23
   isSelected: false
-  type: 飛竜種
-  alias:  蒼火竜
-  name: リオレウス 亜種
+  type: flying-wyverns
+  title: azure-fire-wyvern
+  name: azure-rathalos
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    翼:
+        cutting: 3
+        impact: 3
+        shot: 3
+    wings:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
-    背中:
+        cutting: 2
+        impact: 2
+        shot: 2
+    back:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
-    脚:
+        cutting:
+        impact:
+        shot:
+    legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: sever
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
+        cutting: 2
+        impact: 2
+        shot: 2
   elements:
     fire: 0
     water: 1
@@ -1134,46 +1134,46 @@
     stun: 2
 - id: 24
   isSelected: false
-  type: 飛竜種
-  alias: 黒角竜
-  name: ディアブロス 亜種
+  type: flying-wyverns
+  title: black-horn-wyvern
+  name: black-diablos
   parts:
-    角:
+    horn:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     head:
       breakableType:
       weakness:
-        cut: 2
-        strike: 3
-        shoot: 2
-    翼:
+        cutting: 2
+        impact: 3
+        shot: 2
+    wings:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 1
-        shoot: 3
-    body:
+        cutting: 2
+        impact: 1
+        shot: 3
+    chest:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 2
-    脚:
+        cutting: 3
+        impact: 3
+        shot: 2
+    legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: sever
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
   elements:
     fire: 0
     water: 2
@@ -1188,46 +1188,46 @@
     stun: 1
 - id: 25
   isSelected: false
-  type: 古龍種
-  alias: 滅尽龍
-  name: ネルギガンテ
+  type: elder-dragons
+  title: extinction-dragon
+  name: nergigante
   parts:
-    角:
+    horn:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
+        cutting: 3
+        impact: 3
+        shot: 3
     head:
       breakableType:
       weakness:
-        cut: 2
-        strike: 3
-        shoot: 2
-    front-legs:
+        cutting: 2
+        impact: 3
+        shot: 2
+    fore-legs:
       breakableType:
       weakness:
-        cut: 3
-        strike: 2
-        shoot: 2
-    body:
+        cutting: 3
+        impact: 2
+        shot: 2
+    chest:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
-    back-legs:
+        cutting:
+        impact:
+        shot:
+    rear-legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: sever
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
   elements:
     fire: 1
     water: 1
@@ -1242,46 +1242,46 @@
     stun: 2
 - id: 26
   isSelected: false
-  type: 古龍種
-  alias: 炎王龍
-  name: テオ テスカトル
+  type: elder-dragons
+  title: flame-king-dragon
+  name: teostra
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    翼:
+        cutting: 3
+        impact: 3
+        shot: 3
+    wings:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
-    front-legs:
+        cutting: 2
+        impact: 2
+        shot: 2
+    fore-legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
-    body:
+        cutting:
+        impact:
+        shot:
+    chest:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
-    back-legs:
+        cutting:
+        impact:
+        shot:
+    rear-legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: sever
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
+        cutting: 2
+        impact: 2
+        shot: 2
   elements:
     fire: 0
     water: 3
@@ -1296,46 +1296,46 @@
     stun: 2
 - id: 27
   isSelected: false
-  type: 古龍種
-  alias: 鋼龍
-  name: クシャルダオラ
+  type: elder-dragons
+  title: steel-dragon
+  name: kushala-daora
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 2
-    翼:
+        cutting: 3
+        impact: 3
+        shot: 2
+    wings:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
-    front-legs:
+        cutting:
+        impact:
+        shot:
+    fore-legs:
       breakableType:
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 2
-    body:
+        cutting: 2
+        impact: 2
+        shot: 2
+    chest:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
-    back-legs:
+        cutting:
+        impact:
+        shot:
+    rear-legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: sever
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 3
+        cutting: 2
+        impact: 2
+        shot: 3
   elements:
     fire: 1
     water: 0
@@ -1350,46 +1350,46 @@
     stun: 2
 - id: 28
   isSelected: false
-  type: 古龍種
-  alias: 屍套龍
-  name: ヴァルハザク
+  type: elder-dragons
+  title: corpse-coat-dragon
+  name: vaal-hazak
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 3
-        shoot: 2
-    翼:
+        cutting: 2
+        impact: 3
+        shot: 2
+    wings:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
-    front-legs:
+        cutting:
+        impact:
+        shot:
+    fore-legs:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
-    body:
+        cutting:
+        impact:
+        shot:
+    chest:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 1
-    back-legs:
+        cutting: 2
+        impact: 2
+        shot: 1
+    rear-legs:
       breakableType:
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
+        cutting: 3
+        impact: 3
+        shot: 3
     tail:
       breakableType: sever
       weakness:
-        cut: 3
-        strike: 1
-        shoot: 2
+        cutting: 3
+        impact: 1
+        shot: 2
   elements:
     fire: 3
     water: 0
@@ -1404,46 +1404,46 @@
     stun: 2
 - id: 29
   isSelected: false
-  type: 古龍種
-  alias: 冥灯龍
-  name: ゼノ ジーヴァ
+  type: elder-dragons
+  title: dark-light-dragon
+  name: xeno-jiiva
   parts:
     head:
       breakableType: break
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
-    翼:
+        cutting: 3
+        impact: 3
+        shot: 3
+    wings:
       breakableType: break
       weakness:
-        cut:
-        strike:
-        shoot:
-    front-legs:
+        cutting:
+        impact:
+        shot:
+    fore-legs:
       breakableType: break
       weakness:
-        cut: 2
-        strike: 2
-        shoot: 1
-    body:
+        cutting: 2
+        impact: 2
+        shot: 1
+    chest:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
-    back-legs:
+        cutting:
+        impact:
+        shot:
+    rear-legs:
       breakableType:
       weakness:
-        cut:
-        strike:
-        shoot:
+        cutting:
+        impact:
+        shot:
     tail:
       breakableType: sever
       weakness:
-        cut: 3
-        strike: 3
-        shoot: 3
+        cutting: 3
+        impact: 3
+        shot: 3
   elements:
     fire: 2
     water: 2

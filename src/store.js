@@ -38,7 +38,7 @@ const getters = {
           let idsOfWord = []
           getters.filteredMonstersByTypes.forEach(mons => {
             let regexp = new RegExp(word)
-            if (regexp.test(`${mons.alias}${mons.name}`)) {
+            if (regexp.test(`${mons.title}${mons.name}`)) {
               idsOfWord.push(mons.id)
             }
           })

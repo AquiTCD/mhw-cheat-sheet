@@ -1,3 +1,15 @@
+ui:
+  menus:
+    main: メイン
+    faq: FAQ
+    feedback: 問題報告
+    About: About
+  types: 種別
+  keywords: キーワード
+  names: 名称
+  all-on: 全てオン
+  all-off: 全てオフ
+  clear: CLEAR
 elements:
   fire: 火
   water: 水
@@ -13,20 +25,92 @@ status:
 weakness-header:
   parts: 部位
   break: 破壊
-  cut: 斬
-  strike: 打
-  shoot: 弾
+  cutting: 斬
+  impact: 打
+  shot: 弾
 breakableType:
   break: 破壊
   sever: 切断
   null: ''
 parts:
-  horn: horn
-  head: head
-  neck: neck
-  body: body
-  wing: wing
-  front-legs: front legs
-  back-legs: back legs
-  legs: legs
-  tail: tail
+  horn: 角
+  head: 頭
+  neck-pouch: 頸袋
+  chest: 胴
+  back: 背中
+  wings: 翼
+  fore-legs: 前脚
+  rear-legs: 後脚
+  legs: 脚
+  tail: 尻尾
+  magmacore: 排熱機関
+monster:
+  types:
+    fanged-wyverns: 牙竜種
+    bird-wyverns: 鳥竜種
+    brute-wyverns: 獣竜種
+    piscine-wyverns: 魚竜種
+    flying-wyverns: 飛竜種
+    elder-dragons: 古龍種
+  titles:
+    thief-wyvern: 賊竜
+    scratching-bird: 掻鳥
+    poison-bewitching-bird: 毒妖鳥
+    landslide-wyvern: 土砂竜
+    mud-fish-wyvern: 泥魚竜
+    flying-thunder-wyvern: 飛雷竜
+    fierce-jaw-wyvern: 蛮頭竜
+    female-fire-wyvern: 雌火竜
+    dizzy-bird: 眩鳥
+    floating-sky-wyvern: 浮空竜
+    paralyzing-thief-wyvern: 痺賊竜
+    bone-hammer-wyvern: 骨鎚竜
+    wind-drifting-wyvern: 風漂竜
+    cruel-claw-wyvern: 惨爪竜
+    fire-wyvern: 火竜
+    horned-wyvern: 角竜
+    phantom-beast: 幻獣
+    scorching-mountain-dragon: 熔山龍
+    rock-thief-wyvern: 岩賊竜
+    cherry-blossom-fire-wyvern: 桜火竜
+    explosive-scale-wyvern: 爆鱗竜
+    lava-wyvern: 溶岩竜
+    bursthammer-wyvern: 爆鎚竜
+    azure-fire-wyvern: 蒼火竜
+    black-horn-wyvern: 黒角竜
+    extinction-dragon: 滅尽龍
+    flame-king-dragon: 炎王龍
+    steel-dragon: 鋼龍
+    corpse-coat-dragon: 屍套龍
+    dark-light-dragon: 冥灯龍
+  names:
+    great-jagras: ドスジャグラス
+    kulu-ya-ku: クルルヤック
+    pukei-pukei: プケプケ
+    barroth: ボルボロス
+    jyuratodus: ジュラトドス
+    tobi-kadachi: トビカガチ
+    anjanath: アンジャナフ
+    rathian: リオレイア
+    tzitzi-ya-ku: ツィツィヤック
+    paolumu: パオウルムー
+    great-girros: ドスギルオス
+    radobaan: ラドバルキン
+    legiana: レイギエナ
+    odogaron: オドガロン
+    rathalos: リオレウス
+    diablos: ディアブロス
+    kirin: キリン
+    zorah-magdaros: ゾラ・マグダラオス
+    dodogama: ドドガマル
+    pink-rathian: リオレイア 亜種
+    bazelgeuse: バゼルギウス
+    lavasioth: ヴォルガノス
+    uragaan: ウラガンキン
+    azure-rathalos: リオレウス 亜種
+    black-diablos: ディアブロス 亜種
+    nergigante: ネルギガンテ
+    teostra: テオ・テスカトル
+    kushala-daora: クシャルダオラ
+    vaal-hazak: ヴァルハザク
+    xeno-jiiva: ゼノ ジーヴァ

@@ -31,7 +31,7 @@ v-ons-list
           @click="toggleCheck(mons.id)"
         )
       label.center(:for="mons.id")
-        | {{ mons.name }}
+        | {{$t(`monster.names.${mons.name}`)}}
     v-ons-list-item(v-if="!monsters.length" v-show="isOpen" :key="'dammy'")
       label.left
         v-ons-checkbox(disabled)

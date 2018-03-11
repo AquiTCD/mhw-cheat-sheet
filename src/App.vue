@@ -41,6 +41,9 @@ export default {
       }
     },
   },
+  created () {
+    this.$i18n.locale = this.$route.params.lang
+  },
   components: {
     HomePage,
     MenuPage,

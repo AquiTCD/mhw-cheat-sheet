@@ -1,9 +1,9 @@
 <template lang="pug">
   v-ons-card(:name="mons.name")
     .type
-      | {{ mons.type }}
+      | {{$t(`monster.types.${mons.type}`)}}: {{$t(`monster.titles.${mons.title}`)}}
     .title
-      | {{ mons.alias }} {{ mons.name }}
+      | {{$t(`monster.names.${mons.name}`)}}
     table.elements
       thead.elementsThead
         tr
@@ -23,9 +23,9 @@
         tr
           th.weaknessHeader {{$t(`weakness-header.parts`)}}
           th.weaknessHeader {{$t(`weakness-header.break`)}}
-          th.weaknessHeader {{$t(`weakness-header.cut`)}}
-          th.weaknessHeader {{$t(`weakness-header.strike`)}}
-          th.weaknessHeader {{$t(`weakness-header.shoot`)}}
+          th.weaknessHeader {{$t(`weakness-header.cutting`)}}
+          th.weaknessHeader {{$t(`weakness-header.impact`)}}
+          th.weaknessHeader {{$t(`weakness-header.shot`)}}
       tbody.weaknessTbody
         tr(v-for="(v, k) in mons.parts")
           th.weaknessHeader {{$t(`parts.${k}`)}}
