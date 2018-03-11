@@ -18,7 +18,7 @@
             icon="fa-language"
           )
     .ad
-      span.pr - スポンサードリンク -
+      span.pr {{$t('ui.sponsered-link')}}
       Adsense(
         data-ad-client="ca-pub-5201227009100177"
         data-ad-slot="4809633238"
@@ -56,6 +56,13 @@ export default {
           lang: lang,
         },
       })
+      let msg = ''
+      if (lang === 'ja') {
+        msg = 'Language is changed to Japanese'
+      } else {
+        msg = '言語が英語に変更されました'
+      }
+      this.$ons.notification.toast(msg, { timeout: 1000, animation: 'fall', })
     },
   },
 }

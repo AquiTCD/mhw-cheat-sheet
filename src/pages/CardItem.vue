@@ -7,7 +7,7 @@
     table.elements
       thead.elementsThead
         tr
-          th(v-for="(v, k) in mons.elements" v-bind:class="k")  {{$t(`elements.${k}`)}}
+          th(v-for="(v, k) in mons.elements" v-bind:class="k") {{$t(`elements.${k}`)}}
       tbody
         tr
           td(v-for="(v, k) in mons.elements" v-html="stars(v)")

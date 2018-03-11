@@ -1,6 +1,6 @@
 <template lang="pug">
 .about
-  h2.header About
+  h2.header {{$t('ui.menus.about')}}
   v-ons-card
     .date 2018-03-08
     .title 0.3.0

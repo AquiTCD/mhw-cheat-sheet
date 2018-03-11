@@ -4,16 +4,16 @@ v-ons-list
     @click="toggleOpen()"
   )
     i.fa(:class="isOpen ? 'fa-chevron-down' : 'fa-chevron-right'")
-    | &nbsp; 名称
+    | &nbsp; {{$t('ui.name')}}
     .buttons
       v-ons-button.button(
         modifier="outline"
         @click.stop="offAllcheckbox()"
-      ) 全てオフ
+      ) {{$t('ui.all-off')}}
       v-ons-button.button(
         modifier="normal"
         @click.stop="onAllcheckbox()"
-      ) 全てオン
+      ) {{$t('ui.all-on')}}
   transition-group(name="accordion" tag="div")
     v-ons-list-item(
       tappable
@@ -36,7 +36,7 @@ v-ons-list
       label.left
         v-ons-checkbox(disabled)
       label.center.disabled
-        | モンスター名
+        | {{$t('ui.dammy.name')}}
 </template>
 
 <script>

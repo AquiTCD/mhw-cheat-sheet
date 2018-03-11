@@ -4,16 +4,16 @@ v-ons-list
     @click="toggleOpen()"
   )
     i.fa(:class="isOpen ? 'fa-chevron-down' : 'fa-chevron-right'").center
-    | &nbsp; 種別
+    | &nbsp; {{$t('ui.class')}}
     .buttons
       v-ons-button.button(
         modifier="outline"
         @click.stop="offAllSwitch()"
-      ) 全てオフ
+      ) {{$t('ui.all-off')}}
       v-ons-button.button(
         modifier="normal"
         @click.stop="onAllSwitch()"
-      ) 全てオン
+      ) {{$t('ui.all-on')}}
   transition-group(name="accordion" tag="div")
     v-ons-list-item(
       tappable

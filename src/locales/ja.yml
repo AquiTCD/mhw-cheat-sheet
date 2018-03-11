@@ -3,13 +3,19 @@ ui:
     main: メイン
     faq: FAQ
     feedback: 問題報告
-    About: About
-  types: 種別
+    about: About
+  class: 種別
   keywords: キーワード
-  names: 名称
+  name: 名称
   all-on: 全てオン
   all-off: 全てオフ
   clear: CLEAR
+  sponsered-link: スポンサーリンク
+  dammy:
+    class: 種別
+    title: 別名
+    name: モンスター名
+    weakpoints: 弱点
 elements:
   fire: 火
   water: 水

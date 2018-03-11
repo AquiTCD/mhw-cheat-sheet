@@ -3,13 +3,19 @@ ui:
     main: Main
     faq: FAQ
     feedback: Feedback
-    About: About
-  types: Types
+    about: About
+  class: Class
   keywords: Keywords
-  names: Names
+  name: Name
   all-on: ALL ON
   all-off: ALL OFF
   clear: CLEAR
+  sponsered-link: Sponsered Link
+  dammy:
+    class: Class
+    title: Title
+    name: Name
+    weakpoints: Weakpoints
 elements:
   fire: Fire
   water: Water

@@ -1,6 +1,6 @@
 <template lang="pug">
 .about
-  h2.header Feedback
+  h2.header {{$t('ui.menus.feedback')}}
   .iframeContents
     iframe( src="https://docs.google.com/forms/d/e/1FAIpQLSfNMkmoh6HshmJlMabxCAYAebXoYF9TVWU_60Qvw5Tuu_26zA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0") 読み込んでいます...
 </template>

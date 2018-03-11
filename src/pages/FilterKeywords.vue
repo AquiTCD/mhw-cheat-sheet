@@ -4,7 +4,7 @@ v-ons-list
     @click="toggleOpen()"
   )
     i.fa(:class="isOpen ? 'fa-chevron-down' : 'fa-chevron-right'")
-    | &nbsp; キーワード
+    | &nbsp; {{$t('ui.keywords')}}
     .buttons
       v-ons-button.button(
         modifier="outline"
@@ -13,7 +13,7 @@ v-ons-list
   transition(name="accordion")
     .search(v-show="isOpen")
       v-ons-search-input.searchBox(
-        placeholder="キーワード"
+        :placeholder="$t('ui.keywords')"
         v-model="keywords"
       )
 </template>

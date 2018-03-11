@@ -1,6 +1,6 @@
 <template lang="pug">
 .faq
-  h2.header FAQ
+  h2.header {{$t('ui.menus.faq')}}
   v-ons-card
     .title Q.使い方がわかりません。
     .answer

@@ -62,7 +62,7 @@ export {
 export { default as VOnsSwitch } from 'vue-onsenui/esm/components/VOnsSwitch'
 // export { default as VOnsTab } from 'vue-onsenui/esm/components/VOnsTab'
 // export { default as VOnsTabbar } from 'vue-onsenui/esm/components/VOnsTabbar'
-// export { default as VOnsToast } from 'vue-onsenui/esm/components/VOnsToast'
+export { default as VOnsToast } from 'vue-onsenui/esm/components/VOnsToast'
 export { default as VOnsToolbar } from 'vue-onsenui/esm/components/VOnsToolbar'
 export {
   default as VOnsToolbarButton,

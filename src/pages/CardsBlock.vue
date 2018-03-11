@@ -8,11 +8,11 @@
     )
     v-ons-card(v-if="!filteredMonsters.length" :key="'dammy'")
       .type.disabled
-        | 種別
+        | {{$t('ui.dammy.class')}}: {{$t('ui.dammy.title')}}
       .title.disabled
-        | 別名 名称
+        | {{$t('ui.dammy.name')}}
       .weakness.disabled
-        | 弱点
+        | {{$t('ui.dammy.weakpoints')}}
 </template>
 
 <script>

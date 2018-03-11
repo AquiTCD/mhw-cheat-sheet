@@ -14,7 +14,7 @@ v-ons-page
       )
       .left
         v-ons-icon(fixed-width :icon="item.icon")
-      .center {{ item.label }}
+      .center {{$t(`ui.menus.${item.name}`)}}
   .social
     .fb(data-href="https://mhw-cs.solunita.net" data-mobile-iframe="true")
       a(a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fmhw-cs.solunita.net%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore")
@@ -37,28 +37,24 @@ export default {
     return {
       links: [
         {
-          label     : 'メインページ',
           name      : 'main',
           link      : '/',
           icon      : 'fa-book',
           openNewTab: false,
         },
         {
-          label     : 'FAQ',
           name      : 'faq',
           link      : '/faq',
           icon      : 'fa-question-circle',
           openNewTab: false,
         },
         {
-          label     : '問題報告',
           name      : 'feedback',
           link      : '/feedback',
           icon      : 'fa-commenting',
           openNewTab: false,
         },
         {
-          label     : 'About',
           name      : 'about',
           link      : '/about',
           icon      : 'fa-info-circle',
