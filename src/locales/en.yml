@@ -120,3 +120,72 @@ monster:
     kushala-daora: Kushala Daora
     vaal-hazak: Vaal Hazak
     xeno-jiiva: Xeno'jiiva
+faqs:
+  - q: How can I change the language?
+    a:
+      - Toolbar on top, there is the icon to chage the language.(now available Japanese and English)
+  - q: How can I use this system?
+    a:
+      - There is nothing to show at first. Please turn on/off class sliders and name checkboxies. It will show monster's details below.
+  - q: Disappered class sliders and names checkboxies.
+    a:
+      - It might be folded. Please tap/click class and name header to show them.
+  - q: How to use keywords?
+    a:
+      - Keywords works for filters. At first, I recommend to show all, then input some keywords as you like.
+      - And, it works for not only names, works for titles as well.
+      - You can also use 'AND' and 'OR' like search engines. Of course, space works as 'AND'.
+  - q: I found incorrect datas.
+    a:
+      - Sorry about that. Please inform me from feedback about it.(sorry, it only Japanese version. I will work for English version.)
+  - q: Where datas are from?
+    a:
+      - It refers to Monster notes in game. but, some of the little things might be changed to easy to read.
+  - q: Freezed, does not work well.
+    a:
+      - Check the thigs below.
+      - Use in web browsers(not in web-view like inside of twitter or SNS apps).
+      - Reload it.
+      - If it does not work well after do them, please inform me from feedback.
+  - q: Have some ideas to be better.
+    a:
+      - Thank you for that. Please inform me your ideas.
+  - q: Why does not add new ideas that I informed?
+    a:
+      - There shoul be some reason not to do. Might be technicaly, or ideally. Please understand it.
+abouts:
+  - date: '2018-03-11'
+    v: 0.4.0
+    lines:
+      - Now available in English.
+      - Tweak
+  - date: '2018-03-08'
+    v: 0.3.0
+    lines:
+      - Add animations when accordions fold/expand.
+      - Add filter by keywords.
+      - Tweak
+  - date: '2018-03-07'
+    v: 0.2.2
+    lines:
+      - Fix class slider does not work well by click/tap.
+      - Add dammies when nothing to show.
+      - Add folding funciton for class and name.
+      - Add All-ON/OFF button to class and name.
+      - Update icon for smartphone.
+      - Tweak
+  - date: '2018-03-06'
+    v: 0.2.1
+    lines:
+      - Add Share on SNS buttons.
+      - Embed feedback form.
+      - Update icon for iOS.
+  - date: '2018-03-05'
+    v: 0.2.0
+    lines:
+      - Add Menus, FAQ, About, Feedback.
+      - Update icons.
+  - date: '2018-03-04'
+    v: 0.1.0
+    lines:
+      - First release!
