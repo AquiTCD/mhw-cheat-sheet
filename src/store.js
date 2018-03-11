@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import _ from 'lodash'
 import monsters from '@/monsters.yml'
+import { i18n, } from './i18n-setup'
 const state = {
   monsters   : monsters,
   typesFilter: [],
@@ -37,8 +38,10 @@ const getters = {
         words.forEach(word => {
           let idsOfWord = []
           getters.filteredMonstersByTypes.forEach(mons => {
-            let regexp = new RegExp(word)
-            if (regexp.test(`${mons.title}${mons.name}`)) {
+            let regexp = new RegExp(word, 'i')
+            let title = i18n.t(`monster.titles.${mons.title}`)
+            let name = i18n.t(`monster.names.${mons.name}`)
+            if (regexp.test(`${title} ${name}`)) {
               idsOfWord.push(mons.id)
             }
           })
