@@ -50,6 +50,7 @@ export default {
     setupMeta (lang) {
       let changeMetaTags = (title, description) => {
         document.title = title
+        document.getElementsByTagName('html')[0].setAttribute('lang', lang)
         let nodelist = document.getElementsByTagName('meta')
         let metas = Array.prototype.slice.call(nodelist,0)
         metas.forEach(meta => {
