@@ -38,11 +38,50 @@ export default {
           },
         })
         this.$i18n.locale = to.params.lang
+        this.setupMeta(to.params.lang)
       }
     },
   },
   created () {
     this.$i18n.locale = this.$route.params.lang
+    this.setupMeta(this.$route.params.lang)
+  },
+  methods: {
+    setupMeta (lang) {
+      let changeMetaTags = (title, description) => {
+        document.title = title
+        let nodelist = document.getElementsByTagName('meta')
+        let metas = Array.prototype.slice.call(nodelist,0)
+        metas.forEach(meta => {
+          if (meta.getAttribute('property') === 'og:site_name') {
+            meta.setAttribute('content', title)
+          } else if (meta.getAttribute('property') === 'og:title') {
+            meta.setAttribute('content', title)
+          } else if (meta.getAttribute('name') === 'twitter:title') {
+            meta.setAttribute('content', title)
+          } else if (meta.getAttribute('name') === 'apple-mobile-web-app-title') {
+            meta.setAttribute('content', title)
+          } else if (meta.getAttribute('property') === 'og:description') {
+            meta.setAttribute('content', description)
+          } else if (meta.getAttribute('name') === 'description') {
+            meta.setAttribute('content', description)
+          } else if (meta.getAttribute('name') === 'twitter:description') {
+            meta.setAttribute('content', description)
+          }
+        })
+      }
+      let title = ''
+      let description = ''
+      if (lang === 'en') {
+        title = 'MHW WeakPoints CheatSheet'
+        description = 'Monster Hunter World CheatSheat to search monster week-points'
+        changeMetaTags(title, description)
+      } else if (lang === 'ja') {
+        title = 'MHW 弱点検索'
+        description = 'モンスターハンターワールド モンスター弱点検索システム'
+        changeMetaTags(title, description)
+      }
+    },
   },
   components: {
     HomePage,
