@@ -123,29 +123,29 @@ monster:
 faqs:
   - q: How can I change the language?
     a:
-      - Toolbar on top, there is the icon to chage the language.(now available Japanese and English)
+      - Tap/Click the language icon in right hand side of toolbar on top.(now available Japanese and English)
   - q: How can I use this system?
     a:
       - There is nothing to show at first. Please turn on/off class sliders and name checkboxies. It will show monster's details below.
-  - q: Disappered class sliders and names checkboxies.
+  - q: Disappeared class sliders and names checkboxies.
     a:
       - It might be folded. Please tap/click class and name header to show them.
   - q: How to use keywords?
     a:
-      - Keywords works for filters. At first, I recommend to show all, then input some keywords as you like.
+      - Keywords works as filters. At first, I recommend to show all, then input some keywords as you like.
       - And, it works for not only names, works for titles as well.
-      - You can also use 'AND' and 'OR' like search engines. Of course, space works as 'AND'.
+      - You can also use 'AND' and 'OR' like common search engines. Of course, space works as 'AND'.
   - q: I found incorrect datas.
     a:
-      - Sorry about that. Please inform me from feedback about it.(sorry, it only Japanese version. I will work for English version.)
+      - Sorry for that. Please inform me from feedback about it.
   - q: Where datas are from?
     a:
-      - It refers to Monster notes in game. but, some of the little things might be changed to easy to read.
+      - It refers to Monster Filed Guide in game. but, some of little things might be changed for easy to read.
   - q: Freezed, does not work well.
     a:
-      - Check the thigs below.
-      - Use in web browsers(not in web-view like inside of twitter or SNS apps).
-      - Reload it.
+      - Check things below.
+      - 1. Use in web browsers(not in web-view like inside of twitter or SNS apps).
+      - 2. Reload it.
       - If it does not work well after do them, please inform me from feedback.
   - q: Have some ideas to be better.
     a:
@@ -154,6 +154,12 @@ faqs:
     a:
       - There shoul be some reason not to do. Might be technicaly, or ideally. Please understand it.
 abouts:
+  - date: '2018-03-13'
+    v: 0.4.1
+    lines:
+      - Optimize feedback form for English.
+      - Optimize site title and meta information for English.
+      - Tweak
   - date: '2018-03-11'
     v: 0.4.0
     lines:

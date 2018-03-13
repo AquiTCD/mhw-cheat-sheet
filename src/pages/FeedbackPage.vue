@@ -1,8 +1,11 @@
 <template lang="pug">
 .about
   h2.header {{$t('ui.menus.feedback')}}
-  .iframeContents
+  .iframeContents.ja(v-if="this.$route.params.lang === 'ja'")
     iframe( src="https://docs.google.com/forms/d/e/1FAIpQLSfNMkmoh6HshmJlMabxCAYAebXoYF9TVWU_60Qvw5Tuu_26zA/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0") 読み込んでいます...
+  .iframeContents.en(v-if="this.$route.params.lang === 'en'")
+    iframe( src="https://docs.google.com/forms/d/e/1FAIpQLScBEfKArQUQSayLoZNfwG77OY0tVvJod98l382r5AQ4xZ0vkw/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0") Loading...
+
 </template>
 
 <script>
