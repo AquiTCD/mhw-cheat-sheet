@@ -1,5 +1,4 @@
 // Add your components:
-/* eslint-disable */
 // export { default as VOnsActionSheet } from 'vue-onsenui/esm/components/VOnsActionSheet'
 // export { default as VOnsActionSheetButton } from 'vue-onsenui/esm/components/VOnsActionSheetButton'
 // export { default as VOnsAlertDialog } from 'vue-onsenui/esm/components/VOnsAlertDialog'

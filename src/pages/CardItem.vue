@@ -36,7 +36,7 @@
 <script>
 export default {
   name   : 'CardItem',
-  props  : ['mons',],
+  props  : ['mons'],
   methods: {
     stars (points) {
       let numToStars = num => {

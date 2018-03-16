@@ -62,7 +62,7 @@ export default {
       } else {
         msg = '言語が英語に変更されました'
       }
-      this.$ons.notification.toast(msg, { timeout: 1000, animation: 'fall', })
+      this.$ons.notification.toast(msg, { timeout: 500, animation: 'fall' })
     },
   },
 }
@@ -85,7 +85,7 @@ ons-list-item, ons-card
   font-size: 9px
   color: #BDBDBD
 .page-enter-active, .page-leave-active
-  transition: all .6s
+  transition: all .3s
 .page-enter
   margin-right: -100%
   margin-left: 100%

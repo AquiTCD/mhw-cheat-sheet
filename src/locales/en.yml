@@ -152,8 +152,14 @@ faqs:
       - Thank you for that. Please inform me your ideas.
   - q: Why does not add new ideas that I informed?
     a:
-      - There shoul be some reason not to do. Might be technicaly, or ideally. Please understand it.
+      - There should be some reason not to do. Might be technically, or ideally. Please understand it.
 abouts:
+  - date: '2018-03-16'
+    v: 0.4.2
+    lines:
+      - Fix paramaters of some monsters.
+      - Adjust velocity of animations.
+      - Update site description.
   - date: '2018-03-13'
     v: 0.4.1
     lines:

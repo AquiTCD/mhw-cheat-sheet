@@ -75,11 +75,11 @@ export default {
       let description = ''
       if (lang === 'en') {
         title = 'MHW WeakPoints CheatSheet'
-        description = 'Monster Hunter World CheatSheat to search monster week-points'
+        description = 'Monster Hunter World CheatSheat to search monster week-points. You can check weakness parts and elements quickly when waiting for loading or prepearing. Easy to use like an app without download if you add to home of your smartphone'
         changeMetaTags(title, description)
       } else if (lang === 'ja') {
         title = 'MHW 弱点検索'
-        description = 'モンスターハンターワールド モンスター弱点検索システム'
+        description = 'モンスターハンターワールド モンスター弱点検索システム ロード待ちや準備の時にスマホで操作でき、簡単に素早くモンスターの弱点属性や部位を調べることができます。ホーム登録にすればダウンロードすることなくアプリのように使うことができます。'
         changeMetaTags(title, description)
       }
     },

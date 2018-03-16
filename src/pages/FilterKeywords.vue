@@ -67,7 +67,7 @@ export default {
   width: calc(100% - 18px)
   padding: 9px
 .accordion-enter-active, .accordion-leave-active
-  transition: all .5s
+  transition: all .4s
 .accordion-leave-to, .accordion-enter
   height: 0
   opacity: 0

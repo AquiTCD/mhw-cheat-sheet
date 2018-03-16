@@ -25,7 +25,7 @@ module.exports = {
   ],
   // add your custom rules here
   'rules': {
-    'comma-dangle': [1, 'always'],
+    'comma-dangle': [2, 'always-multiline'],
     'no-console': 1,
     'eol-last': 0,
     'block-scoped-var': 0,
@@ -58,13 +58,12 @@ module.exports = {
     'comma-spacing': 0,
     'prefer-const': 0,
     'curly': 0,
-    'object-curly-spacing': [1, 'always', { 'arraysInObjects': false, 'objectsInObjects': false }],
+    'object-curly-spacing': [2, 'always', { 'arraysInObjects': false, 'objectsInObjects': false }],
     // allow paren-less arrow functions
     'arrow-parens': 0,
     // allow async-await
     'generator-star-spacing': 0,
     // allow debugger during development
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    'standard/object-curly-even-spacing': 0
   }
 }

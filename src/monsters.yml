@@ -1003,15 +1003,15 @@
     head:
       breakableType: break
       weakness:
-      cutting: 3
-      打: 3
-      弾: 3
+        cutting: 3
+        impact: 3
+        shot: 3
     chest:
       breakableType: break
       weakness:
-      cutting: 3
-      打: 2
-      弾: 3
+        cutting: 3
+        impact: 2
+        shot: 3
     legs:
       breakableType: break
       weakness:
