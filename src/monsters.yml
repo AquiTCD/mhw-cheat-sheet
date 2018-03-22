@@ -1456,3 +1456,51 @@
     paralysis: 1
     blast: 2
     stun: 1
+- id: 30
+  isSelected: false
+  type: brute-wyverns
+  title: violent-wyvern
+  name: deviljho
+  parts:
+    head:
+      breakableType: break
+      weakness:
+        cutting: 3
+        impact: 3
+        shot: 3
+    fore-legs:
+      breakableType:
+      weakness:
+        cutting:
+        impact:
+        shot:
+    chest:
+      breakableType: break
+      weakness:
+        cutting: 3
+        impact: 3
+        shot: 3
+    legs:
+      breakableType:
+      weakness:
+        cutting:
+        impact:
+        shot:
+    tail:
+      breakableType: sever
+      weakness:
+        cutting:
+        impact:
+        shot:
+  elements:
+    fire: 2
+    water: 2
+    thunder: 3
+    ice: 1
+    dragon: 3
+  status:
+    poison: 2
+    sleep: 2
+    paralysis: 2
+    blast: 2
+    stun: 2

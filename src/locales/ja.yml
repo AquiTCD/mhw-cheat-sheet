@@ -89,6 +89,7 @@ monster:
     steel-dragon: 鋼龍
     corpse-coat-dragon: 屍套龍
     dark-light-dragon: 冥灯龍
+    violent-wyvern: 恐暴竜
   names:
     great-jagras: ドスジャグラス
     kulu-ya-ku: クルルヤック
@@ -120,6 +121,7 @@ monster:
     kushala-daora: クシャルダオラ
     vaal-hazak: ヴァルハザク
     xeno-jiiva: ゼノ ジーヴァ
+    deviljho: イビルジョー
 faqs:
   - q: 英語になってしまいました
     a:
@@ -154,6 +156,10 @@ faqs:
     a:
       - なんらかの理由に修正できない、もしくはしないこともあります。ご了承ください。
 abouts:
+  - date: '2018-03-23'
+    v: 0.4.3
+    lines:
+      - イビルジョーのデータを追加
   - date: '2018-03-16'
     v: 0.4.2
     lines:

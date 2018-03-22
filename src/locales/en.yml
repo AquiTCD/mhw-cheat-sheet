@@ -89,6 +89,7 @@ monster:
     steel-dragon: Steel Dragon
     corpse-coat-dragon: Corpse Coat Dragon
     dark-light-dragon: Dark Light Dragon
+    violent-wyvern: Violent Wyvern
   names:
     great-jagras: Great Jagras
     kulu-ya-ku: Kulu-Ya-Ku
@@ -120,6 +121,7 @@ monster:
     kushala-daora: Kushala Daora
     vaal-hazak: Vaal Hazak
     xeno-jiiva: Xeno'jiiva
+    deviljho: Deviljho
 faqs:
   - q: How can I change the language?
     a:
@@ -154,6 +156,10 @@ faqs:
     a:
       - There should be some reason not to do. Might be technically, or ideally. Please understand it.
 abouts:
+  - date: '2018-03-23'
+    v: 0.4.3
+    lines:
+      - Add data of Deviljho
   - date: '2018-03-16'
     v: 0.4.2
     lines:
